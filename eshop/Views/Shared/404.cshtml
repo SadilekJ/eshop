@@ -1,0 +1,16 @@
+﻿@model _404ViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">404 Error.</h1>
+
+@if (Model != null)
+{
+    <p>
+        <strong>Status Code:</strong> <code>@Model.StatusCode</code>
+    </p>
+    <p>
+        <strong>Nic jsem nenašel</strong>
+    </p>
+}

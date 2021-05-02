@@ -1,0 +1,891 @@
+2021-05-01T20:26:15.8690973+02:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"OrderItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2021-05-01T20:26:17.1205282+02:00  [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:27:25.2102971+02:00  [INF] Executed DbCommand ("11,829"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2021-05-01T20:27:28.9069096+02:00  [INF] Executed DbCommand ("99"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T20:27:29.0330936+02:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T20:27:29.0936371+02:00  [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:27:29.9118245+02:00  [INF] Executed DbCommand ("450"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2021-05-01T20:27:30.4394265+02:00  [INF] User profile is available. Using '"C:\Users\hanss\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2021-05-01T20:27:30.4487685+02:00  [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:27:30.5492310+02:00  [WRN] Role "(null)" validation failed: "DuplicateRoleName". (60d773c7)
+2021-05-01T20:27:30.6481550+02:00  [INF] Executed DbCommand ("183"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2021-05-01T20:27:30.7427977+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2021-05-01T20:27:30.7446431+02:00  [WRN] Role "(null)" validation failed: "DuplicateRoleName". (60d773c7)
+2021-05-01T20:27:30.9013902+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2021-05-01T20:27:30.9015053+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2021-05-01T20:27:30.9022047+02:00  [WRN] Role "(null)" validation failed: "DuplicateRoleName". (60d773c7)
+2021-05-01T20:27:31.6502524+02:00  [INF] Creating key {b173a89a-6138-47e7-8793-6832ec89d2a3} with creation date 2021-05-01 18:27:31Z, activation date 2021-05-01 18:27:30Z, and expiration date 2021-07-30 18:27:30Z. (77afce94)
+2021-05-01T20:27:31.6655266+02:00  [INF] Writing data to file '"C:\Users\hanss\AppData\Local\ASP.NET\DataProtection-Keys\key-b173a89a-6138-47e7-8793-6832ec89d2a3.xml"'. (da22a8b1)
+2021-05-01T20:27:35.5666315+02:00 0HM8CPR5A3GFU:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:64498/  0 (ca22a1cb)
+2021-05-01T20:27:35.5665738+02:00 0HM8CPR5A3GFT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/   (ca22a1cb)
+2021-05-01T20:27:35.7972022+02:00 0HM8CPR5A3GFU:00000001 [INF] Request finished in 229.9887ms 200  (791a596a)
+2021-05-01T20:27:38.2268563+02:00 0HM8CPR5A3GFT:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T20:27:38.3075957+02:00 0HM8CPR5A3GFT:00000001 [INF] Executing action method "eshop.Controllers.HomeController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T20:27:38.3116262+02:00 0HM8CPR5A3GFT:00000001 [INF] Home clicked (b2c0bc31)
+2021-05-01T20:27:38.3701764+02:00 0HM8CPR5A3GFT:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:27:38.5285923+02:00 0HM8CPR5A3GFT:00000001 [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[CarouselContent], [c].[DataTarget], [c].[DateTimeCreated], [c].[ImageAlt], [c].[ImageSrc]
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T20:27:38.7447502+02:00 0HM8CPR5A3GFT:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T20:27:38.7948441+02:00 0HM8CPR5A3GFT:00000001 [INF] Executed action method "eshop.Controllers.HomeController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 479.2049ms. (50a9e262)
+2021-05-01T20:27:39.1966090+02:00 0HM8CPR5A3GFT:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T20:27:41.0633301+02:00 0HM8CPR5A3GFT:00000001 [INF] Executed ViewResult - view "Index" executed in 2188.9456ms. (f66409e9)
+2021-05-01T20:27:41.0707309+02:00 0HM8CPR5A3GFT:00000001 [INF] Executed action "eshop.Controllers.HomeController.Index (eshop)" in 2842.3763ms (afa2e885)
+2021-05-01T20:27:41.1024179+02:00 0HM8CPR5A3GFT:00000001 [INF] Request finished in 5539.7602ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T20:27:42.5355233+02:00 0HM8CPR5A3GFU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2021-05-01T20:27:42.5355236+02:00 0HM8CPR5A3GFT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/css/site.css   (ca22a1cb)
+2021-05-01T20:27:42.5715292+02:00 0HM8CPR5A3GFV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/css/Styles.css   (ca22a1cb)
+2021-05-01T20:27:42.7539002+02:00 0HM8CPR5A3GFT:00000002 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\css\site.css"' (27b0a520)
+2021-05-01T20:27:42.7541372+02:00 0HM8CPR5A3GFV:00000001 [INF] Sending file. Request path: '"/css/Styles.css"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\css\Styles.css"' (27b0a520)
+2021-05-01T20:27:42.7541899+02:00 0HM8CPR5A3GFT:00000002 [INF] Request finished in 219.2893ms 200 text/css (791a596a)
+2021-05-01T20:27:42.7544470+02:00 0HM8CPR5A3GFV:00000001 [INF] Request finished in 182.9985ms 200 text/css (791a596a)
+2021-05-01T20:27:42.7873112+02:00 0HM8CPR5A3GFT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/css/shop_template.css   (ca22a1cb)
+2021-05-01T20:27:42.7894692+02:00 0HM8CPR5A3GFV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Carousels/cd-projekt-logo.png   (ca22a1cb)
+2021-05-01T20:27:42.8413239+02:00 0HM8CPR5A3GG0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Carousels/ea-play-carousel.png   (ca22a1cb)
+2021-05-01T20:27:42.8421140+02:00 0HM8CPR5A3GG1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Carousels/open-world-games.jpg   (ca22a1cb)
+2021-05-01T20:27:42.8626676+02:00 0HM8CPR5A3GG2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/The-Elder-Scrolls-V-Skyrim.jpg   (ca22a1cb)
+2021-05-01T20:27:43.0236173+02:00 0HM8CPR5A3GFV:00000002 [INF] Sending file. Request path: '"/images/Carousels/cd-projekt-logo.png"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Carousels\cd-projekt-logo.png"' (27b0a520)
+2021-05-01T20:27:43.0242789+02:00 0HM8CPR5A3GFV:00000002 [INF] Request finished in 235.2013ms 200 image/png (791a596a)
+2021-05-01T20:27:43.0614719+02:00 0HM8CPR5A3GFT:00000003 [INF] Sending file. Request path: '"/css/shop_template.css"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\css\shop_template.css"' (27b0a520)
+2021-05-01T20:27:43.0619544+02:00 0HM8CPR5A3GFT:00000003 [INF] Request finished in 274.688ms 200 text/css (791a596a)
+2021-05-01T20:27:43.0885943+02:00 0HM8CPR5A3GFU:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2021-05-01T20:27:43.0889961+02:00 0HM8CPR5A3GFU:00000002 [INF] Request finished in 554.0432ms 200 text/css (791a596a)
+2021-05-01T20:27:43.2401542+02:00 0HM8CPR5A3GG2:00000001 [INF] Sending file. Request path: '"/images/Products/The-Elder-Scrolls-V-Skyrim.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\The-Elder-Scrolls-V-Skyrim.jpg"' (27b0a520)
+2021-05-01T20:27:43.2403428+02:00 0HM8CPR5A3GG1:00000001 [INF] Sending file. Request path: '"/images/Carousels/open-world-games.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Carousels\open-world-games.jpg"' (27b0a520)
+2021-05-01T20:27:43.2404402+02:00 0HM8CPR5A3GG2:00000001 [INF] Request finished in 378.2455ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:43.2405940+02:00 0HM8CPR5A3GG1:00000001 [INF] Request finished in 399.098ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:43.2505832+02:00 0HM8CPR5A3GFV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/max-payne.jpg   (ca22a1cb)
+2021-05-01T20:27:43.2519081+02:00 0HM8CPR5A3GFT:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/The-Sims-IV.jpg   (ca22a1cb)
+2021-05-01T20:27:43.3187732+02:00 0HM8CPR5A3GFT:00000004 [INF] Sending file. Request path: '"/images/Products/The-Sims-IV.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\The-Sims-IV.jpg"' (27b0a520)
+2021-05-01T20:27:43.3192219+02:00 0HM8CPR5A3GFT:00000004 [INF] Request finished in 67.4574ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:43.3201883+02:00 0HM8CPR5A3GG0:00000001 [INF] Sending file. Request path: '"/images/Carousels/ea-play-carousel.png"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Carousels\ea-play-carousel.png"' (27b0a520)
+2021-05-01T20:27:43.3205042+02:00 0HM8CPR5A3GG0:00000001 [INF] Request finished in 481.2076ms 200 image/png (791a596a)
+2021-05-01T20:27:43.3794621+02:00 0HM8CPR5A3GFV:00000003 [INF] Sending file. Request path: '"/images/Products/max-payne.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\max-payne.jpg"' (27b0a520)
+2021-05-01T20:27:43.3803634+02:00 0HM8CPR5A3GFV:00000003 [INF] Request finished in 129.2917ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:44.9872152+02:00 0HM8CPR5A3GG2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/cyberpunk_2077.jpg   (ca22a1cb)
+2021-05-01T20:27:44.9874889+02:00 0HM8CPR5A3GFU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/far-cry-5.jpg   (ca22a1cb)
+2021-05-01T20:27:44.9888372+02:00 0HM8CPR5A3GG1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/zaklinac-3.jpg   (ca22a1cb)
+2021-05-01T20:27:44.9904900+02:00 0HM8CPR5A3GFT:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Fallout-4.jpg   (ca22a1cb)
+2021-05-01T20:27:45.2930465+02:00 0HM8CPR5A3GG3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Red-Dead-Redemption-2.jpg   (ca22a1cb)
+2021-05-01T20:27:45.6169201+02:00 0HM8CPR5A3GG4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/fifa-20.jpg   (ca22a1cb)
+2021-05-01T20:27:45.6247790+02:00 0HM8CPR5A3GG5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Sid-Meiers-Civilization-VI.jpg   (ca22a1cb)
+2021-05-01T20:27:45.9722363+02:00 0HM8CPR5A3GG6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/halo-3.jpg   (ca22a1cb)
+2021-05-01T20:27:46.5187656+02:00 0HM8CPR5A3GFT:00000005 [INF] Sending file. Request path: '"/images/Products/Fallout-4.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Fallout-4.jpg"' (27b0a520)
+2021-05-01T20:27:46.5191832+02:00 0HM8CPR5A3GFT:00000005 [INF] Request finished in 1528.7375ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:46.5195836+02:00 0HM8CPR5A3GG7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/kingdom-come.jpg   (ca22a1cb)
+2021-05-01T20:27:46.6934427+02:00 0HM8CPR5A3GG8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/gta-v.jpg   (ca22a1cb)
+2021-05-01T20:27:46.6999527+02:00 0HM8CPR5A3GG6:00000001 [INF] Sending file. Request path: '"/images/Products/halo-3.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\halo-3.jpg"' (27b0a520)
+2021-05-01T20:27:46.7003099+02:00 0HM8CPR5A3GG6:00000001 [INF] Request finished in 728.7924ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:46.7007063+02:00 0HM8CPR5A3GG9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/flatout2.jpg   (ca22a1cb)
+2021-05-01T20:27:46.7010785+02:00 0HM8CPR5A3GGA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/dirt-4.jpg   (ca22a1cb)
+2021-05-01T20:27:46.8850117+02:00 0HM8CPR5A3GGC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/nfs-heat.jpg   (ca22a1cb)
+2021-05-01T20:27:46.8850698+02:00 0HM8CPR5A3GGB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Anno-2070.jpg   (ca22a1cb)
+2021-05-01T20:27:46.8865483+02:00 0HM8CPR5A3GGD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/beat-saber.jpg   (ca22a1cb)
+2021-05-01T20:27:47.0043223+02:00 0HM8CPR5A3GGF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/cod-modern-warfare.jpg   (ca22a1cb)
+2021-05-01T20:27:47.0043223+02:00 0HM8CPR5A3GGE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/NBA-2K21.jpg   (ca22a1cb)
+2021-05-01T20:27:47.0102497+02:00 0HM8CPR5A3GGG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/lib/jquery/dist/jquery.js   (ca22a1cb)
+2021-05-01T20:27:47.3034573+02:00 0HM8CPR5A3GGI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2021-05-01T20:27:47.3034574+02:00 0HM8CPR5A3GGH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Stellaris.jpg   (ca22a1cb)
+2021-05-01T20:27:47.3038912+02:00 0HM8CPR5A3GGJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/total-war-rome-2.jpg   (ca22a1cb)
+2021-05-01T20:27:47.3906661+02:00 0HM8CPR5A3GGK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/js/Product.js   (ca22a1cb)
+2021-05-01T20:27:47.4006431+02:00 0HM8CPR5A3GGL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2021-05-01T20:27:47.4841833+02:00 0HM8CPR5A3GGM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   (ca22a1cb)
+2021-05-01T20:27:47.4888196+02:00 0HM8CPR5A3GG0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Assassins-Creed-Origins.jpg   (ca22a1cb)
+2021-05-01T20:27:47.5382891+02:00 0HM8CPR5A3GGA:00000001 [INF] Sending file. Request path: '"/images/Products/dirt-4.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\dirt-4.jpg"' (27b0a520)
+2021-05-01T20:27:47.5386923+02:00 0HM8CPR5A3GGA:00000001 [INF] Request finished in 837.5807ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.5397246+02:00 0HM8CPR5A3GG2:00000002 [INF] Sending file. Request path: '"/images/Products/cyberpunk_2077.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\cyberpunk_2077.jpg"' (27b0a520)
+2021-05-01T20:27:47.5401187+02:00 0HM8CPR5A3GG2:00000002 [INF] Request finished in 2553.0965ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.5405560+02:00 0HM8CPR5A3GFU:00000003 [INF] Sending file. Request path: '"/images/Products/far-cry-5.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\far-cry-5.jpg"' (27b0a520)
+2021-05-01T20:27:47.5408659+02:00 0HM8CPR5A3GFU:00000003 [INF] Request finished in 2553.8624ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.5417027+02:00 0HM8CPR5A3GG1:00000002 [INF] Sending file. Request path: '"/images/Products/zaklinac-3.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\zaklinac-3.jpg"' (27b0a520)
+2021-05-01T20:27:47.5420234+02:00 0HM8CPR5A3GG1:00000002 [INF] Request finished in 2553.9886ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.5573436+02:00 0HM8CPR5A3GFV:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Rust.jpg   (ca22a1cb)
+2021-05-01T20:27:47.5587904+02:00 0HM8CPR5A3GGM:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\js\site.js"' (27b0a520)
+2021-05-01T20:27:47.5592074+02:00 0HM8CPR5A3GGM:00000001 [INF] Request finished in 75.5272ms 200 application/javascript (791a596a)
+2021-05-01T20:27:47.7606152+02:00 0HM8CPR5A3GGC:00000001 [INF] Sending file. Request path: '"/images/Products/nfs-heat.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\nfs-heat.jpg"' (27b0a520)
+2021-05-01T20:27:47.7646774+02:00 0HM8CPR5A3GGC:00000001 [INF] Request finished in 878.5586ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.7646814+02:00 0HM8CPR5A3GGL:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2021-05-01T20:27:47.7675627+02:00 0HM8CPR5A3GGL:00000001 [INF] Request finished in 365.3857ms 200 font/woff2 (791a596a)
+2021-05-01T20:27:47.7690929+02:00 0HM8CPR5A3GG7:00000001 [INF] Sending file. Request path: '"/images/Products/kingdom-come.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\kingdom-come.jpg"' (27b0a520)
+2021-05-01T20:27:47.7694035+02:00 0HM8CPR5A3GG7:00000001 [INF] Request finished in 1249.8862ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.8816976+02:00 0HM8CPR5A3GGF:00000001 [INF] Sending file. Request path: '"/images/Products/cod-modern-warfare.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\cod-modern-warfare.jpg"' (27b0a520)
+2021-05-01T20:27:47.8818605+02:00 0HM8CPR5A3GG9:00000001 [INF] Sending file. Request path: '"/images/Products/flatout2.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\flatout2.jpg"' (27b0a520)
+2021-05-01T20:27:47.8821665+02:00 0HM8CPR5A3GG9:00000001 [INF] Request finished in 1181.4859ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.8832755+02:00 0HM8CPR5A3GGF:00000001 [INF] Request finished in 878.8205ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.8882461+02:00 0HM8CPR5A3GG4:00000001 [INF] Sending file. Request path: '"/images/Products/fifa-20.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\fifa-20.jpg"' (27b0a520)
+2021-05-01T20:27:47.8886054+02:00 0HM8CPR5A3GG4:00000001 [INF] Request finished in 2272.3898ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9018218+02:00 0HM8CPR5A3GGD:00000001 [INF] Sending file. Request path: '"/images/Products/beat-saber.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\beat-saber.jpg"' (27b0a520)
+2021-05-01T20:27:47.9038386+02:00 0HM8CPR5A3GGJ:00000001 [INF] Sending file. Request path: '"/images/Products/total-war-rome-2.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\total-war-rome-2.jpg"' (27b0a520)
+2021-05-01T20:27:47.9041912+02:00 0HM8CPR5A3GGJ:00000001 [INF] Request finished in 600.4214ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9046704+02:00 0HM8CPR5A3GG5:00000001 [INF] Sending file. Request path: '"/images/Products/Sid-Meiers-Civilization-VI.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Sid-Meiers-Civilization-VI.jpg"' (27b0a520)
+2021-05-01T20:27:47.9048951+02:00 0HM8CPR5A3GGB:00000001 [INF] Sending file. Request path: '"/images/Products/Anno-2070.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Anno-2070.jpg"' (27b0a520)
+2021-05-01T20:27:47.9049910+02:00 0HM8CPR5A3GG5:00000001 [INF] Request finished in 2280.4419ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9050911+02:00 0HM8CPR5A3GGD:00000001 [INF] Request finished in 1019.9885ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9061358+02:00 0HM8CPR5A3GG8:00000001 [INF] Sending file. Request path: '"/images/Products/gta-v.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\gta-v.jpg"' (27b0a520)
+2021-05-01T20:27:47.9075446+02:00 0HM8CPR5A3GG8:00000001 [INF] Request finished in 1213.1691ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9085165+02:00 0HM8CPR5A3GGB:00000001 [INF] Request finished in 1024.1067ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9089386+02:00 0HM8CPR5A3GGG:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2021-05-01T20:27:47.9092039+02:00 0HM8CPR5A3GGG:00000001 [INF] Request finished in 899.6215ms 200 application/javascript (791a596a)
+2021-05-01T20:27:47.9095991+02:00 0HM8CPR5A3GG0:00000002 [INF] Sending file. Request path: '"/images/Products/Assassins-Creed-Origins.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Assassins-Creed-Origins.jpg"' (27b0a520)
+2021-05-01T20:27:47.9099663+02:00 0HM8CPR5A3GG0:00000002 [INF] Request finished in 421.2284ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9157976+02:00 0HM8CPR5A3GFV:00000004 [INF] Sending file. Request path: '"/images/Products/Rust.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Rust.jpg"' (27b0a520)
+2021-05-01T20:27:47.9161940+02:00 0HM8CPR5A3GFV:00000004 [INF] Request finished in 361.0942ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9168699+02:00 0HM8CPR5A3GG3:00000001 [INF] Sending file. Request path: '"/images/Products/Red-Dead-Redemption-2.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Red-Dead-Redemption-2.jpg"' (27b0a520)
+2021-05-01T20:27:47.9171613+02:00 0HM8CPR5A3GG3:00000001 [INF] Request finished in 2624.297ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9222394+02:00 0HM8CPR5A3GGI:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2021-05-01T20:27:47.9226452+02:00 0HM8CPR5A3GGI:00000001 [INF] Request finished in 620.6459ms 200 application/javascript (791a596a)
+2021-05-01T20:27:47.9231235+02:00 0HM8CPR5A3GGK:00000001 [INF] Sending file. Request path: '"/js/Product.js"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\js\Product.js"' (27b0a520)
+2021-05-01T20:27:47.9234236+02:00 0HM8CPR5A3GGK:00000001 [INF] Request finished in 535.0159ms 200 application/javascript (791a596a)
+2021-05-01T20:27:47.9527395+02:00 0HM8CPR5A3GGH:00000001 [INF] Sending file. Request path: '"/images/Products/Stellaris.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Stellaris.jpg"' (27b0a520)
+2021-05-01T20:27:47.9536710+02:00 0HM8CPR5A3GGH:00000001 [INF] Request finished in 651.2651ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:47.9641249+02:00 0HM8CPR5A3GGE:00000001 [INF] Sending file. Request path: '"/images/Products/NBA-2K21.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\NBA-2K21.jpg"' (27b0a520)
+2021-05-01T20:27:47.9644815+02:00 0HM8CPR5A3GGE:00000001 [INF] Request finished in 962.7111ms 200 image/jpeg (791a596a)
+2021-05-01T20:27:52.3725759+02:00 0HM8CPR5A3GG6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/favicon.ico   (ca22a1cb)
+2021-05-01T20:27:52.5229120+02:00 0HM8CPR5A3GG6:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\favicon.ico"' (27b0a520)
+2021-05-01T20:27:52.5232711+02:00 0HM8CPR5A3GG6:00000002 [INF] Request finished in 150.9065ms 200 image/x-icon (791a596a)
+2021-05-01T20:29:46.6815206+02:00 0HM8CPR5A3GGN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Products/14   (ca22a1cb)
+2021-05-01T20:29:46.7714803+02:00 0HM8CPR5A3GGN:00000001 [INF] Route matched with "{action = \"Detail\", controller = \"Products\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Detail(Int32)" on controller "eshop.Controllers.ProductsController" ("eshop"). (122b2fdf)
+2021-05-01T20:29:46.9890494+02:00 0HM8CPR5A3GGN:00000001 [INF] Executing action method "eshop.Controllers.ProductsController.Detail (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T20:29:46.9938690+02:00 0HM8CPR5A3GGN:00000001 [INF] Detail clicked (787bf5f0)
+2021-05-01T20:29:46.9954100+02:00 0HM8CPR5A3GGN:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:29:47.9775731+02:00 0HM8CPR5A3GGN:00000001 [INF] Executed DbCommand ("326"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [prodI].[ID], [prodI].[Category], [prodI].[DateTimeCreated], [prodI].[DetailOfProduct], [prodI].[ImageAlt], [prodI].[ImageSrc], [prodI].[Name], [prodI].[Price]
+FROM [Product] AS [prodI]
+WHERE [prodI].[ID] = @__id_0
+ORDER BY [prodI].[ID]" (0723d8ff)
+2021-05-01T20:29:50.2651106+02:00 0HM8CPR5A3GGN:00000001 [INF] Executed DbCommand ("2,169"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [prodI.MainComments].[ID], [prodI.MainComments].[Approved], [prodI.MainComments].[CommentMessage], [prodI.MainComments].[DateTimeCreated], [prodI.MainComments].[ProductId], [prodI.MainComments].[UserId], [m.User].[Id], [m.User].[AccessFailedCount], [m.User].[ConcurrencyStamp], [m.User].[Email], [m.User].[EmailConfirmed], [m.User].[LastName], [m.User].[LockoutEnabled], [m.User].[LockoutEnd], [m.User].[Name], [m.User].[NormalizedEmail], [m.User].[NormalizedUserName], [m.User].[PasswordHash], [m.User].[PhoneNumber], [m.User].[PhoneNumberConfirmed], [m.User].[SecurityStamp], [m.User].[TwoFactorEnabled], [m.User].[UserName]
+FROM [MainComment] AS [prodI.MainComments]
+INNER JOIN [Users] AS [m.User] ON [prodI.MainComments].[UserId] = [m.User].[Id]
+INNER JOIN (
+    SELECT TOP(1) [prodI0].[ID]
+    FROM [Product] AS [prodI0]
+    WHERE [prodI0].[ID] = @__id_0
+    ORDER BY [prodI0].[ID]
+) AS [t] ON [prodI.MainComments].[ProductId] = [t].[ID]
+ORDER BY [t].[ID], [prodI.MainComments].[ID]" (0723d8ff)
+2021-05-01T20:29:50.9459934+02:00 0HM8CPR5A3GGN:00000001 [INF] Executed DbCommand ("512"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [prodI.MainComments.SubComments].[ID], [prodI.MainComments.SubComments].[Approved], [prodI.MainComments.SubComments].[CommentMessage], [prodI.MainComments.SubComments].[DateTimeCreated], [prodI.MainComments.SubComments].[MainCommentId], [prodI.MainComments.SubComments].[UserId]
+FROM [SubComment] AS [prodI.MainComments.SubComments]
+INNER JOIN (
+    SELECT DISTINCT [prodI.MainComments0].[ID], [t0].[ID] AS [ID0]
+    FROM [MainComment] AS [prodI.MainComments0]
+    INNER JOIN [Users] AS [m.User0] ON [prodI.MainComments0].[UserId] = [m.User0].[Id]
+    INNER JOIN (
+        SELECT TOP(1) [prodI1].[ID]
+        FROM [Product] AS [prodI1]
+        WHERE [prodI1].[ID] = @__id_0
+        ORDER BY [prodI1].[ID]
+    ) AS [t0] ON [prodI.MainComments0].[ProductId] = [t0].[ID]
+) AS [t1] ON [prodI.MainComments.SubComments].[MainCommentId] = [t1].[ID]
+ORDER BY [t1].[ID0], [t1].[ID]" (0723d8ff)
+2021-05-01T20:29:50.9753393+02:00 0HM8CPR5A3GGN:00000001 [INF] Executed action method "eshop.Controllers.ProductsController.Detail (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3985.4574ms. (50a9e262)
+2021-05-01T20:29:51.0247751+02:00 0HM8CPR5A3GGN:00000001 [INF] Executing ViewResult, running view "Detail". (c83d0e25)
+2021-05-01T20:29:51.1786623+02:00 0HM8CPR5A3GGN:00000001 [INF] Executed ViewResult - view "Detail" executed in 202.5573ms. (f66409e9)
+2021-05-01T20:29:51.1795085+02:00 0HM8CPR5A3GGN:00000001 [INF] Executed action "eshop.Controllers.ProductsController.Detail (eshop)" in 4407.3831ms (afa2e885)
+2021-05-01T20:29:51.1803271+02:00 0HM8CPR5A3GGN:00000001 [INF] Request finished in 4498.984ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T20:29:58.5201710+02:00 0HM8CPR5A3GGN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/   (ca22a1cb)
+2021-05-01T20:29:58.5216497+02:00 0HM8CPR5A3GGN:00000002 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T20:29:58.5224533+02:00 0HM8CPR5A3GGN:00000002 [INF] Executing action method "eshop.Controllers.HomeController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T20:29:58.5227903+02:00 0HM8CPR5A3GGN:00000002 [INF] Home clicked (b2c0bc31)
+2021-05-01T20:29:58.5234616+02:00 0HM8CPR5A3GGN:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:29:58.5331871+02:00 0HM8CPR5A3GGN:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[CarouselContent], [c].[DataTarget], [c].[DateTimeCreated], [c].[ImageAlt], [c].[ImageSrc]
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T20:29:58.5400268+02:00 0HM8CPR5A3GGN:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T20:29:58.5415249+02:00 0HM8CPR5A3GGN:00000002 [INF] Executed action method "eshop.Controllers.HomeController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 18.7039ms. (50a9e262)
+2021-05-01T20:29:58.5420981+02:00 0HM8CPR5A3GGN:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T20:29:58.5474073+02:00 0HM8CPR5A3GGN:00000002 [INF] Executed ViewResult - view "Index" executed in 4.3847ms. (f66409e9)
+2021-05-01T20:29:58.5505791+02:00 0HM8CPR5A3GGN:00000002 [INF] Executed action "eshop.Controllers.HomeController.Index (eshop)" in 26.2426ms (afa2e885)
+2021-05-01T20:29:58.5512569+02:00 0HM8CPR5A3GGN:00000002 [INF] Request finished in 31.5372ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T20:38:22.0037062+02:00 0HM8CPR5A3GGO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Security/Account/Login   (ca22a1cb)
+2021-05-01T20:38:22.0158388+02:00 0HM8CPR5A3GGO:00000001 [INF] Route matched with "{area = \"Security\", action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "eshop.Areas.Security.Controllers.AccountController" ("eshop"). (122b2fdf)
+2021-05-01T20:38:22.0178551+02:00 0HM8CPR5A3GGO:00000001 [INF] Executing action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T20:38:22.0198427+02:00 0HM8CPR5A3GGO:00000001 [INF] Account login (2b786d64)
+2021-05-01T20:38:22.0203872+02:00 0HM8CPR5A3GGO:00000001 [INF] Executed action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.1415ms. (50a9e262)
+2021-05-01T20:38:22.1788374+02:00 0HM8CPR5A3GGO:00000001 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2021-05-01T20:38:22.3375276+02:00 0HM8CPR5A3GGO:00000001 [INF] Executed ViewResult - view "Login" executed in 316.6148ms. (f66409e9)
+2021-05-01T20:38:22.3388628+02:00 0HM8CPR5A3GGO:00000001 [INF] Executed action "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" in 321.8351ms (afa2e885)
+2021-05-01T20:38:22.3401287+02:00 0HM8CPR5A3GGO:00000001 [INF] Request finished in 336.3481ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T20:38:22.6712456+02:00 0HM8CPR5A3GGQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/css/LoginPageStyleSheet.css   (ca22a1cb)
+2021-05-01T20:38:22.7049641+02:00 0HM8CPR5A3GGP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/js/Scripts.js   (ca22a1cb)
+2021-05-01T20:38:22.7050243+02:00 0HM8CPR5A3GGO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2021-05-01T20:38:22.7051349+02:00 0HM8CPR5A3GGR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2021-05-01T20:38:22.7191813+02:00 0HM8CPR5A3GGP:00000001 [INF] Sending file. Request path: '"/js/Scripts.js"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\js\Scripts.js"' (27b0a520)
+2021-05-01T20:38:22.7195263+02:00 0HM8CPR5A3GGP:00000001 [INF] Request finished in 59.3619ms 200 application/javascript (791a596a)
+2021-05-01T20:38:22.7889113+02:00 0HM8CPR5A3GGO:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2021-05-01T20:38:22.7893485+02:00 0HM8CPR5A3GGO:00000002 [INF] Request finished in 84.3332ms 200 application/javascript (791a596a)
+2021-05-01T20:38:22.8230528+02:00 0HM8CPR5A3GGR:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2021-05-01T20:38:22.8235142+02:00 0HM8CPR5A3GGR:00000001 [INF] Request finished in 118.4895ms 200 application/javascript (791a596a)
+2021-05-01T20:38:22.8596432+02:00 0HM8CPR5A3GGQ:00000001 [INF] Sending file. Request path: '"/css/LoginPageStyleSheet.css"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\css\LoginPageStyleSheet.css"' (27b0a520)
+2021-05-01T20:38:22.8599568+02:00 0HM8CPR5A3GGQ:00000001 [INF] Request finished in 188.8533ms 200 text/css (791a596a)
+2021-05-01T20:44:50.9426653+02:00 0HM8CPR5A3GGS:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44306/Security/Account/Login application/x-www-form-urlencoded 211 (ca22a1cb)
+2021-05-01T20:44:50.9517473+02:00 0HM8CPR5A3GGS:00000001 [INF] Route matched with "{area = \"Security\", action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eshop.Models.LoginViewModel)" on controller "eshop.Areas.Security.Controllers.AccountController" ("eshop"). (122b2fdf)
+2021-05-01T20:44:51.1220306+02:00 0HM8CPR5A3GGS:00000001 [INF] Executing action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T20:44:51.1289508+02:00 0HM8CPR5A3GGS:00000001 [INF] Account login (2b786d64)
+2021-05-01T20:44:51.1323629+02:00 0HM8CPR5A3GGS:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:45:03.4719335+02:00 0HM8CPR5A3GGS:00000001 [INF] Executed DbCommand ("410"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2021-05-01T20:45:03.6235106+02:00 0HM8CPR5A3GGS:00000001 [WRN] Invalid password for user "1". (c2dce6c7)
+2021-05-01T20:45:03.6247437+02:00 0HM8CPR5A3GGS:00000001 [WRN] User "1" failed to provide the correct password. (ec8d2479)
+2021-05-01T20:45:03.6413227+02:00 0HM8CPR5A3GGS:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2021-05-01T20:45:03.6666900+02:00 0HM8CPR5A3GGS:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2021-05-01T20:45:07.7996593+02:00 0HM8CPR5A3GGS:00000001 [INF] Executed DbCommand ("3,744"ms) [Parameters=["@p16='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p17='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 4000), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Users] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LastName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [Name] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2021-05-01T20:45:08.3664402+02:00 0HM8CPR5A3GGS:00000001 [INF] Executed action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 17239.389ms. (50a9e262)
+2021-05-01T20:45:08.3675766+02:00 0HM8CPR5A3GGS:00000001 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2021-05-01T20:45:08.3983768+02:00 0HM8CPR5A3GGS:00000001 [INF] Executed ViewResult - view "Login" executed in 30.9426ms. (f66409e9)
+2021-05-01T20:45:08.3994163+02:00 0HM8CPR5A3GGS:00000001 [INF] Executed action "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" in 17446.926ms (afa2e885)
+2021-05-01T20:45:08.4002662+02:00 0HM8CPR5A3GGS:00000001 [INF] Request finished in 17459.2017ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T20:59:05.4331260+02:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"OrderItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2021-05-01T20:59:05.6842815+02:00  [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:59:28.7864804+02:00  [INF] Executed DbCommand ("1,370"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2021-05-01T20:59:29.0915878+02:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T20:59:29.1161100+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T20:59:29.1415686+02:00  [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:59:29.5538161+02:00  [INF] Executed DbCommand ("148"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2021-05-01T20:59:29.7014984+02:00  [WRN] Role "(null)" validation failed: "DuplicateRoleName". (60d773c7)
+2021-05-01T20:59:29.7131771+02:00  [INF] Executed DbCommand ("6"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2021-05-01T20:59:29.7153373+02:00  [WRN] Role "(null)" validation failed: "DuplicateRoleName". (60d773c7)
+2021-05-01T20:59:29.7186126+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2021-05-01T20:59:29.7191682+02:00  [WRN] Role "(null)" validation failed: "DuplicateRoleName". (60d773c7)
+2021-05-01T20:59:29.7672781+02:00  [INF] User profile is available. Using '"C:\Users\hanss\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2021-05-01T20:59:29.7797587+02:00  [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:59:29.8520042+02:00  [INF] Executed DbCommand ("48"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2021-05-01T20:59:29.9550927+02:00  [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2021-05-01T20:59:31.3471104+02:00 0HM8CQD09U8LM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/   (ca22a1cb)
+2021-05-01T20:59:31.3471029+02:00 0HM8CQD09U8LL:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:64498/  0 (ca22a1cb)
+2021-05-01T20:59:31.4357831+02:00 0HM8CQD09U8LL:00000001 [INF] Request finished in 88.3003ms 200  (791a596a)
+2021-05-01T20:59:32.5124061+02:00 0HM8CQD09U8LM:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T20:59:32.5371294+02:00 0HM8CQD09U8LM:00000001 [INF] Executing action method "eshop.Controllers.HomeController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T20:59:32.5423527+02:00 0HM8CQD09U8LM:00000001 [INF] Home clicked (b2c0bc31)
+2021-05-01T20:59:32.5438535+02:00 0HM8CQD09U8LM:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T20:59:32.5670045+02:00 0HM8CQD09U8LM:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[CarouselContent], [c].[DataTarget], [c].[DateTimeCreated], [c].[ImageAlt], [c].[ImageSrc]
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T20:59:32.6500573+02:00 0HM8CQD09U8LM:00000001 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T20:59:32.7305964+02:00 0HM8CQD09U8LM:00000001 [INF] Executed action method "eshop.Controllers.HomeController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 180.9912ms. (50a9e262)
+2021-05-01T20:59:32.8127521+02:00 0HM8CQD09U8LM:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T20:59:33.6093468+02:00 0HM8CQD09U8LM:00000001 [INF] Executed ViewResult - view "Index" executed in 852.5422ms. (f66409e9)
+2021-05-01T20:59:33.6143657+02:00 0HM8CQD09U8LM:00000001 [INF] Executed action "eshop.Controllers.HomeController.Index (eshop)" in 1100.7753ms (afa2e885)
+2021-05-01T20:59:33.6439324+02:00 0HM8CQD09U8LM:00000001 [INF] Request finished in 2300.6147ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T20:59:34.1536585+02:00 0HM8CQD09U8LL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2021-05-01T20:59:34.2317909+02:00 0HM8CQD09U8LM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/css/site.css   (ca22a1cb)
+2021-05-01T20:59:34.2334087+02:00 0HM8CQD09U8LN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/css/Styles.css   (ca22a1cb)
+2021-05-01T20:59:34.2411264+02:00 0HM8CQD09U8LN:00000001 [INF] Sending file. Request path: '"/css/Styles.css"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\css\Styles.css"' (27b0a520)
+2021-05-01T20:59:34.2415286+02:00 0HM8CQD09U8LN:00000001 [INF] Request finished in 8.1037ms 200 text/css (791a596a)
+2021-05-01T20:59:34.2745064+02:00 0HM8CQD09U8LM:00000002 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\css\site.css"' (27b0a520)
+2021-05-01T20:59:34.2749421+02:00 0HM8CQD09U8LM:00000002 [INF] Request finished in 43.387ms 200 text/css (791a596a)
+2021-05-01T20:59:34.2826759+02:00 0HM8CQD09U8LL:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2021-05-01T20:59:34.2830913+02:00 0HM8CQD09U8LL:00000002 [INF] Request finished in 129.708ms 200 text/css (791a596a)
+2021-05-01T20:59:34.3377134+02:00 0HM8CQD09U8LN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/css/shop_template.css   (ca22a1cb)
+2021-05-01T20:59:34.3393280+02:00 0HM8CQD09U8LM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Carousels/cd-projekt-logo.png   (ca22a1cb)
+2021-05-01T20:59:34.3396628+02:00 0HM8CQD09U8LN:00000002 [INF] Sending file. Request path: '"/css/shop_template.css"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\css\shop_template.css"' (27b0a520)
+2021-05-01T20:59:34.3399717+02:00 0HM8CQD09U8LN:00000002 [INF] Request finished in 2.7595ms 200 text/css (791a596a)
+2021-05-01T20:59:34.4287403+02:00 0HM8CQD09U8LM:00000003 [INF] Sending file. Request path: '"/images/Carousels/cd-projekt-logo.png"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Carousels\cd-projekt-logo.png"' (27b0a520)
+2021-05-01T20:59:34.4291289+02:00 0HM8CQD09U8LM:00000003 [INF] Request finished in 90.7249ms 200 image/png (791a596a)
+2021-05-01T20:59:34.5459542+02:00 0HM8CQD09U8LL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Carousels/open-world-games.jpg   (ca22a1cb)
+2021-05-01T20:59:34.5464845+02:00 0HM8CQD09U8LN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/The-Elder-Scrolls-V-Skyrim.jpg   (ca22a1cb)
+2021-05-01T20:59:34.5655995+02:00 0HM8CQD09U8LM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/max-payne.jpg   (ca22a1cb)
+2021-05-01T20:59:34.5958372+02:00 0HM8CQD09U8LM:00000004 [INF] Sending file. Request path: '"/images/Products/max-payne.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\max-payne.jpg"' (27b0a520)
+2021-05-01T20:59:34.5962368+02:00 0HM8CQD09U8LM:00000004 [INF] Request finished in 43.3816ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:34.6034713+02:00 0HM8CQD09U8LN:00000003 [INF] Sending file. Request path: '"/images/Products/The-Elder-Scrolls-V-Skyrim.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\The-Elder-Scrolls-V-Skyrim.jpg"' (27b0a520)
+2021-05-01T20:59:34.6045703+02:00 0HM8CQD09U8LN:00000003 [INF] Request finished in 58.3747ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:34.6202276+02:00 0HM8CQD09U8LL:00000003 [INF] Sending file. Request path: '"/images/Carousels/open-world-games.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Carousels\open-world-games.jpg"' (27b0a520)
+2021-05-01T20:59:34.6207300+02:00 0HM8CQD09U8LL:00000003 [INF] Request finished in 74.8723ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:34.6545545+02:00 0HM8CQD09U8LN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/cyberpunk_2077.jpg   (ca22a1cb)
+2021-05-01T20:59:34.6550871+02:00 0HM8CQD09U8LM:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/The-Sims-IV.jpg   (ca22a1cb)
+2021-05-01T20:59:34.6605607+02:00 0HM8CQD09U8LL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/far-cry-5.jpg   (ca22a1cb)
+2021-05-01T20:59:34.7653123+02:00 0HM8CQD09U8LO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/zaklinac-3.jpg   (ca22a1cb)
+2021-05-01T20:59:34.8354969+02:00 0HM8CQD09U8LN:00000004 [INF] Sending file. Request path: '"/images/Products/cyberpunk_2077.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\cyberpunk_2077.jpg"' (27b0a520)
+2021-05-01T20:59:34.8359888+02:00 0HM8CQD09U8LN:00000004 [INF] Request finished in 181.5227ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:34.9031239+02:00 0HM8CQD09U8LL:00000004 [INF] Sending file. Request path: '"/images/Products/far-cry-5.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\far-cry-5.jpg"' (27b0a520)
+2021-05-01T20:59:34.9034176+02:00 0HM8CQD09U8LL:00000004 [INF] Request finished in 243.6849ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:34.9406114+02:00 0HM8CQD09U8LM:00000005 [INF] Sending file. Request path: '"/images/Products/The-Sims-IV.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\The-Sims-IV.jpg"' (27b0a520)
+2021-05-01T20:59:34.9409209+02:00 0HM8CQD09U8LM:00000005 [INF] Request finished in 285.9248ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:34.9411313+02:00 0HM8CQD09U8LO:00000001 [INF] Sending file. Request path: '"/images/Products/zaklinac-3.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\zaklinac-3.jpg"' (27b0a520)
+2021-05-01T20:59:34.9413675+02:00 0HM8CQD09U8LO:00000001 [INF] Request finished in 176.2487ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:35.9760766+02:00 0HM8CQD09U8LM:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/halo-3.jpg   (ca22a1cb)
+2021-05-01T20:59:35.9783625+02:00 0HM8CQD09U8LP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/flatout2.jpg   (ca22a1cb)
+2021-05-01T20:59:35.9790645+02:00 0HM8CQD09U8LO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Rust.jpg   (ca22a1cb)
+2021-05-01T20:59:35.9794236+02:00 0HM8CQD09U8LL:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/kingdom-come.jpg   (ca22a1cb)
+2021-05-01T20:59:35.9809048+02:00 0HM8CQD09U8LQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Fallout-4.jpg   (ca22a1cb)
+2021-05-01T20:59:35.9821181+02:00 0HM8CQD09U8LR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/dirt-4.jpg   (ca22a1cb)
+2021-05-01T20:59:35.9821977+02:00 0HM8CQD09U8LS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/nfs-heat.jpg   (ca22a1cb)
+2021-05-01T20:59:35.9829187+02:00 0HM8CQD09U8LN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/total-war-rome-2.jpg   (ca22a1cb)
+2021-05-01T20:59:35.9831970+02:00 0HM8CQD09U8LT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/fifa-20.jpg   (ca22a1cb)
+2021-05-01T20:59:35.9867752+02:00 0HM8CQD09U8LV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2021-05-01T20:59:35.9890182+02:00 0HM8CQD09U8LU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/cod-modern-warfare.jpg   (ca22a1cb)
+2021-05-01T20:59:36.0632098+02:00 0HM8CQD09U8LO:00000002 [INF] Sending file. Request path: '"/images/Products/Rust.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Rust.jpg"' (27b0a520)
+2021-05-01T20:59:36.0635851+02:00 0HM8CQD09U8LO:00000002 [INF] Request finished in 84.6531ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:36.0672114+02:00 0HM8CQD09U8LQ:00000001 [INF] Sending file. Request path: '"/images/Products/Fallout-4.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Fallout-4.jpg"' (27b0a520)
+2021-05-01T20:59:36.0675813+02:00 0HM8CQD09U8LQ:00000001 [INF] Request finished in 87.3125ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:36.0756752+02:00 0HM8CQD09U8LR:00000001 [INF] Sending file. Request path: '"/images/Products/dirt-4.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\dirt-4.jpg"' (27b0a520)
+2021-05-01T20:59:36.0762107+02:00 0HM8CQD09U8LR:00000001 [INF] Request finished in 94.0125ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:36.0864979+02:00 0HM8CQD09U8LM:00000006 [INF] Sending file. Request path: '"/images/Products/halo-3.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\halo-3.jpg"' (27b0a520)
+2021-05-01T20:59:36.0868452+02:00 0HM8CQD09U8LM:00000006 [INF] Request finished in 111.4131ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:36.1045661+02:00 0HM8CQD09U8LN:00000005 [INF] Sending file. Request path: '"/images/Products/total-war-rome-2.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\total-war-rome-2.jpg"' (27b0a520)
+2021-05-01T20:59:36.1052054+02:00 0HM8CQD09U8LN:00000005 [INF] Request finished in 126.0328ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:36.1091602+02:00 0HM8CQD09U8LV:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2021-05-01T20:59:36.1095150+02:00 0HM8CQD09U8LV:00000001 [INF] Request finished in 122.8669ms 200 font/woff2 (791a596a)
+2021-05-01T20:59:36.1151085+02:00 0HM8CQD09U8LT:00000001 [INF] Sending file. Request path: '"/images/Products/fifa-20.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\fifa-20.jpg"' (27b0a520)
+2021-05-01T20:59:36.1154247+02:00 0HM8CQD09U8LT:00000001 [INF] Request finished in 132.2688ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:36.1718704+02:00 0HM8CQD09U8LP:00000001 [INF] Sending file. Request path: '"/images/Products/flatout2.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\flatout2.jpg"' (27b0a520)
+2021-05-01T20:59:36.1723415+02:00 0HM8CQD09U8LP:00000001 [INF] Request finished in 255.7053ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:36.1951548+02:00 0HM8CQD09U8LS:00000001 [INF] Sending file. Request path: '"/images/Products/nfs-heat.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\nfs-heat.jpg"' (27b0a520)
+2021-05-01T20:59:36.1956080+02:00 0HM8CQD09U8LS:00000001 [INF] Request finished in 213.4318ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:36.3429163+02:00 0HM8CQD09U8LL:00000005 [INF] Sending file. Request path: '"/images/Products/kingdom-come.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\kingdom-come.jpg"' (27b0a520)
+2021-05-01T20:59:36.3434169+02:00 0HM8CQD09U8LL:00000005 [INF] Request finished in 364.3118ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:36.6502259+02:00 0HM8CQD09U8LU:00000001 [INF] Sending file. Request path: '"/images/Products/cod-modern-warfare.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\cod-modern-warfare.jpg"' (27b0a520)
+2021-05-01T20:59:36.6508876+02:00 0HM8CQD09U8LU:00000001 [INF] Request finished in 661.7143ms 200 image/jpeg (791a596a)
+2021-05-01T20:59:38.9450752+02:00 0HM8CQD09U8LO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/favicon.ico   (ca22a1cb)
+2021-05-01T20:59:38.9905253+02:00 0HM8CQD09U8LO:00000003 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\favicon.ico"' (27b0a520)
+2021-05-01T20:59:38.9910994+02:00 0HM8CQD09U8LO:00000003 [INF] Request finished in 46.3058ms 200 image/x-icon (791a596a)
+2021-05-01T21:00:10.2679190+02:00 0HM8CQD09U8LR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Security/Account/Login   (ca22a1cb)
+2021-05-01T21:00:10.2882941+02:00 0HM8CQD09U8LR:00000002 [INF] Route matched with "{area = \"Security\", action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "eshop.Areas.Security.Controllers.AccountController" ("eshop"). (122b2fdf)
+2021-05-01T21:00:10.2944707+02:00 0HM8CQD09U8LR:00000002 [INF] Executing action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:00:10.2964183+02:00 0HM8CQD09U8LR:00000002 [INF] Account login (2b786d64)
+2021-05-01T21:00:10.2970771+02:00 0HM8CQD09U8LR:00000002 [INF] Executed action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.1964ms. (50a9e262)
+2021-05-01T21:00:10.3124983+02:00 0HM8CQD09U8LR:00000002 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2021-05-01T21:00:10.5073234+02:00 0HM8CQD09U8LR:00000002 [INF] Executed ViewResult - view "Login" executed in 209.6129ms. (f66409e9)
+2021-05-01T21:00:10.5082179+02:00 0HM8CQD09U8LR:00000002 [INF] Executed action "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" in 219.3498ms (afa2e885)
+2021-05-01T21:00:10.5089922+02:00 0HM8CQD09U8LR:00000002 [INF] Request finished in 241.1563ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:00:14.7154184+02:00 0HM8CQD09U8LV:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44306/Security/Account/Login application/x-www-form-urlencoded 211 (ca22a1cb)
+2021-05-01T21:00:14.7746991+02:00 0HM8CQD09U8LV:00000002 [INF] Route matched with "{area = \"Security\", action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eshop.Models.LoginViewModel)" on controller "eshop.Areas.Security.Controllers.AccountController" ("eshop"). (122b2fdf)
+2021-05-01T21:00:14.9094532+02:00 0HM8CQD09U8LV:00000002 [INF] Executing action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:00:14.9119108+02:00 0HM8CQD09U8LV:00000002 [INF] Account login (2b786d64)
+2021-05-01T21:00:14.9188087+02:00 0HM8CQD09U8LV:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:00:14.9304417+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2021-05-01T21:00:15.0716562+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2021-05-01T21:00:15.1219803+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2021-05-01T21:00:15.4859352+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("164"ms) [Parameters=["@p16='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p17='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 4000), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Users] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LastName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [Name] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2021-05-01T21:00:15.7129514+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [UserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2021-05-01T21:00:15.9957952+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("48"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [UserRoles] AS [userRole]
+INNER JOIN [Roles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2021-05-01T21:00:16.0303092+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("18"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2021-05-01T21:00:16.1398657+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("31"ms) [Parameters=["@__role_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [RoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2021-05-01T21:00:16.1618923+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("15"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2021-05-01T21:00:16.1697027+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@__role_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [RoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2021-05-01T21:00:16.1732810+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2021-05-01T21:00:16.1762613+02:00 0HM8CQD09U8LV:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [RoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2021-05-01T21:00:16.2081626+02:00 0HM8CQD09U8LV:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2021-05-01T21:00:16.2112226+02:00 0HM8CQD09U8LV:00000002 [INF] Executed action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 1301.3106ms. (50a9e262)
+2021-05-01T21:00:16.2462581+02:00 0HM8CQD09U8LV:00000002 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2021-05-01T21:00:16.2469164+02:00 0HM8CQD09U8LV:00000002 [INF] Executed action "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" in 1471.8603ms (afa2e885)
+2021-05-01T21:00:16.2475999+02:00 0HM8CQD09U8LV:00000002 [INF] Request finished in 1532.2774ms 302  (791a596a)
+2021-05-01T21:00:16.4673041+02:00 0HM8CQD09U8LN:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44306/   (ca22a1cb)
+2021-05-01T21:00:16.5091164+02:00 0HM8CQD09U8LN:00000006 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T21:00:16.5098358+02:00 0HM8CQD09U8LN:00000006 [INF] Executing action method "eshop.Controllers.HomeController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:00:16.5102226+02:00 0HM8CQD09U8LN:00000006 [INF] Home clicked (b2c0bc31)
+2021-05-01T21:00:16.5109341+02:00 0HM8CQD09U8LN:00000006 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:00:16.5167157+02:00 0HM8CQD09U8LN:00000006 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[CarouselContent], [c].[DataTarget], [c].[DateTimeCreated], [c].[ImageAlt], [c].[ImageSrc]
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T21:00:16.5209529+02:00 0HM8CQD09U8LN:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T21:00:16.5226217+02:00 0HM8CQD09U8LN:00000006 [INF] Executed action method "eshop.Controllers.HomeController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 12.2911ms. (50a9e262)
+2021-05-01T21:00:16.5237609+02:00 0HM8CQD09U8LN:00000006 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:00:16.5478952+02:00 0HM8CQD09U8LN:00000006 [INF] Executed ViewResult - view "Index" executed in 24.5467ms. (f66409e9)
+2021-05-01T21:00:16.5542246+02:00 0HM8CQD09U8LN:00000006 [INF] Executed action "eshop.Controllers.HomeController.Index (eshop)" in 38.8619ms (afa2e885)
+2021-05-01T21:00:16.5627559+02:00 0HM8CQD09U8LN:00000006 [INF] Request finished in 87.9433ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:00:21.0407557+02:00 0HM8CQD09U8LS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Products/14   (ca22a1cb)
+2021-05-01T21:00:21.0448692+02:00 0HM8CQD09U8LS:00000002 [INF] Route matched with "{action = \"Detail\", controller = \"Products\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Detail(Int32)" on controller "eshop.Controllers.ProductsController" ("eshop"). (122b2fdf)
+2021-05-01T21:00:21.0476337+02:00 0HM8CQD09U8LS:00000002 [INF] Executing action method "eshop.Controllers.ProductsController.Detail (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:00:21.0529667+02:00 0HM8CQD09U8LS:00000002 [INF] Detail clicked (787bf5f0)
+2021-05-01T21:00:21.0546134+02:00 0HM8CQD09U8LS:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:00:21.1846046+02:00 0HM8CQD09U8LS:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [prodI].[ID], [prodI].[Category], [prodI].[DateTimeCreated], [prodI].[DetailOfProduct], [prodI].[ImageAlt], [prodI].[ImageSrc], [prodI].[Name], [prodI].[Price]
+FROM [Product] AS [prodI]
+WHERE [prodI].[ID] = @__id_0
+ORDER BY [prodI].[ID]" (0723d8ff)
+2021-05-01T21:00:21.2948715+02:00 0HM8CQD09U8LS:00000002 [INF] Executed DbCommand ("89"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [prodI.MainComments].[ID], [prodI.MainComments].[Approved], [prodI.MainComments].[CommentMessage], [prodI.MainComments].[DateTimeCreated], [prodI.MainComments].[ProductId], [prodI.MainComments].[UserId], [m.User].[Id], [m.User].[AccessFailedCount], [m.User].[ConcurrencyStamp], [m.User].[Email], [m.User].[EmailConfirmed], [m.User].[LastName], [m.User].[LockoutEnabled], [m.User].[LockoutEnd], [m.User].[Name], [m.User].[NormalizedEmail], [m.User].[NormalizedUserName], [m.User].[PasswordHash], [m.User].[PhoneNumber], [m.User].[PhoneNumberConfirmed], [m.User].[SecurityStamp], [m.User].[TwoFactorEnabled], [m.User].[UserName]
+FROM [MainComment] AS [prodI.MainComments]
+INNER JOIN [Users] AS [m.User] ON [prodI.MainComments].[UserId] = [m.User].[Id]
+INNER JOIN (
+    SELECT TOP(1) [prodI0].[ID]
+    FROM [Product] AS [prodI0]
+    WHERE [prodI0].[ID] = @__id_0
+    ORDER BY [prodI0].[ID]
+) AS [t] ON [prodI.MainComments].[ProductId] = [t].[ID]
+ORDER BY [t].[ID], [prodI.MainComments].[ID]" (0723d8ff)
+2021-05-01T21:00:21.4066901+02:00 0HM8CQD09U8LS:00000002 [INF] Executed DbCommand ("51"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [prodI.MainComments.SubComments].[ID], [prodI.MainComments.SubComments].[Approved], [prodI.MainComments.SubComments].[CommentMessage], [prodI.MainComments.SubComments].[DateTimeCreated], [prodI.MainComments.SubComments].[MainCommentId], [prodI.MainComments.SubComments].[UserId]
+FROM [SubComment] AS [prodI.MainComments.SubComments]
+INNER JOIN (
+    SELECT DISTINCT [prodI.MainComments0].[ID], [t0].[ID] AS [ID0]
+    FROM [MainComment] AS [prodI.MainComments0]
+    INNER JOIN [Users] AS [m.User0] ON [prodI.MainComments0].[UserId] = [m.User0].[Id]
+    INNER JOIN (
+        SELECT TOP(1) [prodI1].[ID]
+        FROM [Product] AS [prodI1]
+        WHERE [prodI1].[ID] = @__id_0
+        ORDER BY [prodI1].[ID]
+    ) AS [t0] ON [prodI.MainComments0].[ProductId] = [t0].[ID]
+) AS [t1] ON [prodI.MainComments.SubComments].[MainCommentId] = [t1].[ID]
+ORDER BY [t1].[ID0], [t1].[ID]" (0723d8ff)
+2021-05-01T21:00:21.4529093+02:00 0HM8CQD09U8LS:00000002 [INF] Executed action method "eshop.Controllers.ProductsController.Detail (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 401.2735ms. (50a9e262)
+2021-05-01T21:00:21.4719163+02:00 0HM8CQD09U8LS:00000002 [INF] Executing ViewResult, running view "Detail". (c83d0e25)
+2021-05-01T21:00:21.5891822+02:00 0HM8CQD09U8LS:00000002 [INF] Executed ViewResult - view "Detail" executed in 135.6896ms. (f66409e9)
+2021-05-01T21:00:21.5897350+02:00 0HM8CQD09U8LS:00000002 [INF] Executed action "eshop.Controllers.ProductsController.Detail (eshop)" in 544.2704ms (afa2e885)
+2021-05-01T21:00:21.5923488+02:00 0HM8CQD09U8LS:00000002 [INF] Request finished in 549.7897ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:00:47.7971905+02:00 0HM8CQD09U8LR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/Products/SelectProducts   (ca22a1cb)
+2021-05-01T21:00:47.8099404+02:00 0HM8CQD09U8LR:00000003 [INF] Route matched with "{area = \"Admin\", action = \"SelectProducts\", controller = \"Products\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SelectProducts()" on controller "eshop.Areas.Admin.Controllers.ProductsController" ("eshop"). (122b2fdf)
+2021-05-01T21:00:47.9591782+02:00 0HM8CQD09U8LR:00000003 [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:00:47.9627607+02:00 0HM8CQD09U8LR:00000003 [INF] Executing action method "eshop.Areas.Admin.Controllers.ProductsController.SelectProducts (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:00:47.9814475+02:00 0HM8CQD09U8LR:00000003 [INF] Products selected (1b0e3e49)
+2021-05-01T21:00:47.9823855+02:00 0HM8CQD09U8LR:00000003 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:00:47.9872246+02:00 0HM8CQD09U8LR:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T21:00:47.9896511+02:00 0HM8CQD09U8LR:00000003 [INF] Executed action method "eshop.Areas.Admin.Controllers.ProductsController.SelectProducts (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 25.9966ms. (50a9e262)
+2021-05-01T21:00:48.0614415+02:00 0HM8CQD09U8LR:00000003 [INF] Executing ViewResult, running view "SelectProducts". (c83d0e25)
+2021-05-01T21:00:48.1852809+02:00 0HM8CQD09U8LR:00000003 [INF] Executed ViewResult - view "SelectProducts" executed in 194.0126ms. (f66409e9)
+2021-05-01T21:00:48.1869194+02:00 0HM8CQD09U8LR:00000003 [INF] Executed action "eshop.Areas.Admin.Controllers.ProductsController.SelectProducts (eshop)" in 375.4796ms (afa2e885)
+2021-05-01T21:00:48.1877674+02:00 0HM8CQD09U8LR:00000003 [INF] Request finished in 390.8546ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:00:51.8893136+02:00 0HM8CQD09U8LV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Home/Contact   (ca22a1cb)
+2021-05-01T21:00:51.8969581+02:00 0HM8CQD09U8LV:00000003 [INF] Route matched with "{action = \"Contact\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Contact()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T21:00:51.9000886+02:00 0HM8CQD09U8LV:00000003 [INF] Executing action method "eshop.Controllers.HomeController.Contact (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:00:51.9018394+02:00 0HM8CQD09U8LV:00000003 [INF] Contact clicked (883266de)
+2021-05-01T21:00:51.9036868+02:00 0HM8CQD09U8LV:00000003 [INF] Executed action method "eshop.Controllers.HomeController.Contact (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.8077ms. (50a9e262)
+2021-05-01T21:00:51.9446893+02:00 0HM8CQD09U8LV:00000003 [INF] Executing ViewResult, running view "Contact". (c83d0e25)
+2021-05-01T21:00:51.9535088+02:00 0HM8CQD09U8LV:00000003 [INF] Executed ViewResult - view "Contact" executed in 49.3026ms. (f66409e9)
+2021-05-01T21:00:51.9539189+02:00 0HM8CQD09U8LV:00000003 [INF] Executed action "eshop.Controllers.HomeController.Contact (eshop)" in 56.5679ms (afa2e885)
+2021-05-01T21:00:51.9543105+02:00 0HM8CQD09U8LV:00000003 [INF] Request finished in 65.1416ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:00:55.6731309+02:00 0HM8CQD09U8LN:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44306/   (ca22a1cb)
+2021-05-01T21:00:55.6758894+02:00 0HM8CQD09U8LN:00000007 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T21:00:55.6772831+02:00 0HM8CQD09U8LN:00000007 [INF] Executing action method "eshop.Controllers.HomeController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:00:55.6780696+02:00 0HM8CQD09U8LN:00000007 [INF] Home clicked (b2c0bc31)
+2021-05-01T21:00:55.6792454+02:00 0HM8CQD09U8LN:00000007 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:00:55.6865114+02:00 0HM8CQD09U8LN:00000007 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[CarouselContent], [c].[DataTarget], [c].[DateTimeCreated], [c].[ImageAlt], [c].[ImageSrc]
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T21:00:55.6920122+02:00 0HM8CQD09U8LN:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T21:00:55.6961736+02:00 0HM8CQD09U8LN:00000007 [INF] Executed action method "eshop.Controllers.HomeController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 18.2221ms. (50a9e262)
+2021-05-01T21:00:55.6966902+02:00 0HM8CQD09U8LN:00000007 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:00:55.7041153+02:00 0HM8CQD09U8LN:00000007 [INF] Executed ViewResult - view "Index" executed in 7.4542ms. (f66409e9)
+2021-05-01T21:00:55.7044963+02:00 0HM8CQD09U8LN:00000007 [INF] Executed action "eshop.Controllers.HomeController.Index (eshop)" in 28.2789ms (afa2e885)
+2021-05-01T21:00:55.7050522+02:00 0HM8CQD09U8LN:00000007 [INF] Request finished in 32.0182ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:00:56.2884655+02:00 0HM8CQD09U8LS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Carousels/cd-projekt-logo.png   (ca22a1cb)
+2021-05-01T21:00:56.4827464+02:00 0HM8CQD09U8LS:00000003 [INF] Sending file. Request path: '"/images/Carousels/cd-projekt-logo.png"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Carousels\cd-projekt-logo.png"' (27b0a520)
+2021-05-01T21:00:56.4830342+02:00 0HM8CQD09U8LS:00000003 [INF] Request finished in 195.292ms 200 image/png (791a596a)
+2021-05-01T21:00:56.4837203+02:00 0HM8CQD09U8LR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/Rust.jpg   (ca22a1cb)
+2021-05-01T21:00:56.7200399+02:00 0HM8CQD09U8LV:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/total-war-rome-2.jpg   (ca22a1cb)
+2021-05-01T21:00:56.7314097+02:00 0HM8CQD09U8LN:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44306/images/Products/dirt-4.jpg   (ca22a1cb)
+2021-05-01T21:00:56.8097229+02:00 0HM8CQD09U8LR:00000004 [INF] Sending file. Request path: '"/images/Products/Rust.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\Rust.jpg"' (27b0a520)
+2021-05-01T21:00:56.8190258+02:00 0HM8CQD09U8LR:00000004 [INF] Request finished in 326.3753ms 200 image/jpeg (791a596a)
+2021-05-01T21:00:56.8561132+02:00 0HM8CQD09U8LV:00000004 [INF] Sending file. Request path: '"/images/Products/total-war-rome-2.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\total-war-rome-2.jpg"' (27b0a520)
+2021-05-01T21:00:56.8570761+02:00 0HM8CQD09U8LV:00000004 [INF] Request finished in 136.7274ms 200 image/jpeg (791a596a)
+2021-05-01T21:00:56.8607966+02:00 0HM8CQD09U8LN:00000008 [INF] Sending file. Request path: '"/images/Products/dirt-4.jpg"'. Physical path: '"C:\Users\hanss\source\repos\eshop\eshop\wwwroot\images\Products\dirt-4.jpg"' (27b0a520)
+2021-05-01T21:00:56.8620245+02:00 0HM8CQD09U8LN:00000008 [INF] Request finished in 136.409ms 200 image/jpeg (791a596a)
+2021-05-01T21:00:57.8415725+02:00  [WRN] Connection processing ended abnormally. (21e125cb)
+Microsoft.AspNetCore.Connections.ConnectionAbortedException: The connection was aborted
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2021-05-01T21:02:07.4454362+02:00 0HM8CQD09U8M1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/Users   (ca22a1cb)
+2021-05-01T21:02:07.5519995+02:00 0HM8CQD09U8M1:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Areas.Admin.Controllers.UsersController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:07.5535103+02:00 0HM8CQD09U8M1:00000001 [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:02:07.5547365+02:00 0HM8CQD09U8M1:00000001 [INF] Executing action method "eshop.Areas.Admin.Controllers.UsersController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:07.5648421+02:00 0HM8CQD09U8M1:00000001 [INF] Users index (727fccec)
+2021-05-01T21:02:07.5671556+02:00 0HM8CQD09U8M1:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:02:07.6167199+02:00 0HM8CQD09U8M1:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]" (0723d8ff)
+2021-05-01T21:02:07.6179918+02:00 0HM8CQD09U8M1:00000001 [INF] Executed action method "eshop.Areas.Admin.Controllers.UsersController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 62.8565ms. (50a9e262)
+2021-05-01T21:02:07.6332866+02:00 0HM8CQD09U8M1:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:02:07.8538650+02:00 0HM8CQD09U8M1:00000001 [INF] Executed ViewResult - view "Index" executed in 235.2111ms. (f66409e9)
+2021-05-01T21:02:07.8543214+02:00 0HM8CQD09U8M1:00000001 [INF] Executed action "eshop.Areas.Admin.Controllers.UsersController.Index (eshop)" in 301.8716ms (afa2e885)
+2021-05-01T21:02:07.8572780+02:00 0HM8CQD09U8M1:00000001 [INF] Request finished in 409.8592ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:16.0889165+02:00 0HM8CQD09U8M1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Home/About   (ca22a1cb)
+2021-05-01T21:02:16.1037123+02:00 0HM8CQD09U8M1:00000002 [INF] Route matched with "{action = \"About\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult About()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:16.1045058+02:00 0HM8CQD09U8M1:00000002 [INF] Executing action method "eshop.Controllers.HomeController.About (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:16.1055569+02:00 0HM8CQD09U8M1:00000002 [INF] About clicked (11a09162)
+2021-05-01T21:02:16.1081642+02:00 0HM8CQD09U8M1:00000002 [INF] Executed action method "eshop.Controllers.HomeController.About (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.0749ms. (50a9e262)
+2021-05-01T21:02:16.1218626+02:00 0HM8CQD09U8M1:00000002 [INF] Executing ViewResult, running view "About". (c83d0e25)
+2021-05-01T21:02:16.1361138+02:00 0HM8CQD09U8M1:00000002 [INF] Executed ViewResult - view "About" executed in 27.3783ms. (f66409e9)
+2021-05-01T21:02:16.1368278+02:00 0HM8CQD09U8M1:00000002 [INF] Executed action "eshop.Controllers.HomeController.About (eshop)" in 32.3994ms (afa2e885)
+2021-05-01T21:02:16.1372823+02:00 0HM8CQD09U8M1:00000002 [INF] Request finished in 48.4788ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:18.1212866+02:00 0HM8CQD09U8M1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Home/Contact   (ca22a1cb)
+2021-05-01T21:02:18.1254057+02:00 0HM8CQD09U8M1:00000003 [INF] Route matched with "{action = \"Contact\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Contact()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:18.1280088+02:00 0HM8CQD09U8M1:00000003 [INF] Executing action method "eshop.Controllers.HomeController.Contact (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:18.1293752+02:00 0HM8CQD09U8M1:00000003 [INF] Contact clicked (883266de)
+2021-05-01T21:02:18.1306106+02:00 0HM8CQD09U8M1:00000003 [INF] Executed action method "eshop.Controllers.HomeController.Contact (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.4978ms. (50a9e262)
+2021-05-01T21:02:18.1310495+02:00 0HM8CQD09U8M1:00000003 [INF] Executing ViewResult, running view "Contact". (c83d0e25)
+2021-05-01T21:02:18.1353322+02:00 0HM8CQD09U8M1:00000003 [INF] Executed ViewResult - view "Contact" executed in 3.3861ms. (f66409e9)
+2021-05-01T21:02:18.1357765+02:00 0HM8CQD09U8M1:00000003 [INF] Executed action "eshop.Controllers.HomeController.Contact (eshop)" in 9.6586ms (afa2e885)
+2021-05-01T21:02:18.1362260+02:00 0HM8CQD09U8M1:00000003 [INF] Request finished in 20.2648ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:24.4384254+02:00 0HM8CQD09U8M1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44306/   (ca22a1cb)
+2021-05-01T21:02:24.4424633+02:00 0HM8CQD09U8M1:00000004 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:24.4436599+02:00 0HM8CQD09U8M1:00000004 [INF] Executing action method "eshop.Controllers.HomeController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:24.4440347+02:00 0HM8CQD09U8M1:00000004 [INF] Home clicked (b2c0bc31)
+2021-05-01T21:02:24.4451140+02:00 0HM8CQD09U8M1:00000004 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:02:24.4542567+02:00 0HM8CQD09U8M1:00000004 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[CarouselContent], [c].[DataTarget], [c].[DateTimeCreated], [c].[ImageAlt], [c].[ImageSrc]
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T21:02:24.4624475+02:00 0HM8CQD09U8M1:00000004 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T21:02:24.4641559+02:00 0HM8CQD09U8M1:00000004 [INF] Executed action method "eshop.Controllers.HomeController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 20.1102ms. (50a9e262)
+2021-05-01T21:02:24.4646070+02:00 0HM8CQD09U8M1:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:02:24.4745651+02:00 0HM8CQD09U8M1:00000004 [INF] Executed ViewResult - view "Index" executed in 7.2762ms. (f66409e9)
+2021-05-01T21:02:24.4749968+02:00 0HM8CQD09U8M1:00000004 [INF] Executed action "eshop.Controllers.HomeController.Index (eshop)" in 31.9963ms (afa2e885)
+2021-05-01T21:02:24.4755657+02:00 0HM8CQD09U8M1:00000004 [INF] Request finished in 38.0311ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:26.8698434+02:00 0HM8CQD09U8M1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Home/Contact   (ca22a1cb)
+2021-05-01T21:02:26.8712247+02:00 0HM8CQD09U8M1:00000005 [INF] Route matched with "{action = \"Contact\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Contact()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:26.8716748+02:00 0HM8CQD09U8M1:00000005 [INF] Executing action method "eshop.Controllers.HomeController.Contact (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:26.8718813+02:00 0HM8CQD09U8M1:00000005 [INF] Contact clicked (883266de)
+2021-05-01T21:02:26.8721279+02:00 0HM8CQD09U8M1:00000005 [INF] Executed action method "eshop.Controllers.HomeController.Contact (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2128ms. (50a9e262)
+2021-05-01T21:02:26.8724369+02:00 0HM8CQD09U8M1:00000005 [INF] Executing ViewResult, running view "Contact". (c83d0e25)
+2021-05-01T21:02:26.8737632+02:00 0HM8CQD09U8M1:00000005 [INF] Executed ViewResult - view "Contact" executed in 1.256ms. (f66409e9)
+2021-05-01T21:02:26.8741024+02:00 0HM8CQD09U8M1:00000005 [INF] Executed action "eshop.Controllers.HomeController.Contact (eshop)" in 2.5978ms (afa2e885)
+2021-05-01T21:02:26.8745050+02:00 0HM8CQD09U8M1:00000005 [INF] Request finished in 5.1785ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:28.3135686+02:00 0HM8CQD09U8M1:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/Carousel/Carousel   (ca22a1cb)
+2021-05-01T21:02:28.3207943+02:00 0HM8CQD09U8M1:00000006 [INF] Route matched with "{area = \"Admin\", action = \"Carousel\", controller = \"Carousel\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Carousel()" on controller "eshop.Areas.Admin.Controllers.CarouselController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:28.3214565+02:00 0HM8CQD09U8M1:00000006 [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:02:28.3224957+02:00 0HM8CQD09U8M1:00000006 [INF] Executing action method "eshop.Areas.Admin.Controllers.CarouselController.Carousel (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:28.3294857+02:00 0HM8CQD09U8M1:00000006 [INF] Carousel select (6a2ed238)
+2021-05-01T21:02:28.3303659+02:00 0HM8CQD09U8M1:00000006 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:02:28.3360370+02:00 0HM8CQD09U8M1:00000006 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[CarouselContent], [c].[DataTarget], [c].[DateTimeCreated], [c].[ImageAlt], [c].[ImageSrc]
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T21:02:28.3372456+02:00 0HM8CQD09U8M1:00000006 [INF] Executed action method "eshop.Areas.Admin.Controllers.CarouselController.Carousel (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 14.3784ms. (50a9e262)
+2021-05-01T21:02:28.3410905+02:00 0HM8CQD09U8M1:00000006 [INF] Executing ViewResult, running view "Carousel". (c83d0e25)
+2021-05-01T21:02:28.4144401+02:00 0HM8CQD09U8M1:00000006 [INF] Executed ViewResult - view "Carousel" executed in 76.6219ms. (f66409e9)
+2021-05-01T21:02:28.4150866+02:00 0HM8CQD09U8M1:00000006 [INF] Executed action "eshop.Areas.Admin.Controllers.CarouselController.Carousel (eshop)" in 93.6454ms (afa2e885)
+2021-05-01T21:02:28.4157068+02:00 0HM8CQD09U8M1:00000006 [INF] Request finished in 102.1937ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:30.6476438+02:00 0HM8CQD09U8M1:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/Products/SelectProducts   (ca22a1cb)
+2021-05-01T21:02:30.6500137+02:00 0HM8CQD09U8M1:00000007 [INF] Route matched with "{area = \"Admin\", action = \"SelectProducts\", controller = \"Products\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SelectProducts()" on controller "eshop.Areas.Admin.Controllers.ProductsController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:30.6503911+02:00 0HM8CQD09U8M1:00000007 [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:02:30.6507953+02:00 0HM8CQD09U8M1:00000007 [INF] Executing action method "eshop.Areas.Admin.Controllers.ProductsController.SelectProducts (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:30.6510105+02:00 0HM8CQD09U8M1:00000007 [INF] Products selected (1b0e3e49)
+2021-05-01T21:02:30.6517406+02:00 0HM8CQD09U8M1:00000007 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:02:30.6750902+02:00 0HM8CQD09U8M1:00000007 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T21:02:30.6772439+02:00 0HM8CQD09U8M1:00000007 [INF] Executed action method "eshop.Areas.Admin.Controllers.ProductsController.SelectProducts (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 26.0829ms. (50a9e262)
+2021-05-01T21:02:30.6775913+02:00 0HM8CQD09U8M1:00000007 [INF] Executing ViewResult, running view "SelectProducts". (c83d0e25)
+2021-05-01T21:02:30.6870738+02:00 0HM8CQD09U8M1:00000007 [INF] Executed ViewResult - view "SelectProducts" executed in 9.3531ms. (f66409e9)
+2021-05-01T21:02:30.6874715+02:00 0HM8CQD09U8M1:00000007 [INF] Executed action "eshop.Areas.Admin.Controllers.ProductsController.SelectProducts (eshop)" in 37.131ms (afa2e885)
+2021-05-01T21:02:30.6883815+02:00 0HM8CQD09U8M1:00000007 [INF] Request finished in 43.6335ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:33.3005113+02:00 0HM8CQD09U8M1:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/Users   (ca22a1cb)
+2021-05-01T21:02:33.3020189+02:00 0HM8CQD09U8M1:00000008 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Areas.Admin.Controllers.UsersController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:33.3024712+02:00 0HM8CQD09U8M1:00000008 [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:02:33.3029028+02:00 0HM8CQD09U8M1:00000008 [INF] Executing action method "eshop.Areas.Admin.Controllers.UsersController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:33.3031619+02:00 0HM8CQD09U8M1:00000008 [INF] Users index (727fccec)
+2021-05-01T21:02:33.3039803+02:00 0HM8CQD09U8M1:00000008 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:02:33.3083020+02:00 0HM8CQD09U8M1:00000008 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]" (0723d8ff)
+2021-05-01T21:02:33.3092130+02:00 0HM8CQD09U8M1:00000008 [INF] Executed action method "eshop.Areas.Admin.Controllers.UsersController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.9895ms. (50a9e262)
+2021-05-01T21:02:33.3605747+02:00 0HM8CQD09U8M1:00000008 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:02:33.4038711+02:00 0HM8CQD09U8M1:00000008 [INF] Executed ViewResult - view "Index" executed in 93.9547ms. (f66409e9)
+2021-05-01T21:02:33.4043845+02:00 0HM8CQD09U8M1:00000008 [INF] Executed action "eshop.Areas.Admin.Controllers.UsersController.Index (eshop)" in 101.9065ms (afa2e885)
+2021-05-01T21:02:33.4065601+02:00 0HM8CQD09U8M1:00000008 [INF] Request finished in 107.0925ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:35.3871789+02:00 0HM8CQD09U8M1:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/Comments/CommentsShow   (ca22a1cb)
+2021-05-01T21:02:35.3994021+02:00 0HM8CQD09U8M1:00000009 [INF] Route matched with "{area = \"Admin\", action = \"CommentsShow\", controller = \"Comments\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CommentsShow()" on controller "eshop.Areas.Admin.Controllers.CommentsController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:35.3998956+02:00 0HM8CQD09U8M1:00000009 [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:02:35.4012933+02:00 0HM8CQD09U8M1:00000009 [INF] Executing action method "eshop.Areas.Admin.Controllers.CommentsController.CommentsShow (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:35.4052407+02:00 0HM8CQD09U8M1:00000009 [INF] MainComments show (49ad7341)
+2021-05-01T21:02:35.4090210+02:00 0HM8CQD09U8M1:00000009 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:02:35.4672018+02:00 0HM8CQD09U8M1:00000009 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[Approved], [c].[CommentMessage], [c].[DateTimeCreated], [c].[ProductId], [c].[UserId]
+FROM [MainComment] AS [c]
+ORDER BY [c].[ID]" (0723d8ff)
+2021-05-01T21:02:35.5200125+02:00 0HM8CQD09U8M1:00000009 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.SubComments].[ID], [c.SubComments].[Approved], [c.SubComments].[CommentMessage], [c.SubComments].[DateTimeCreated], [c.SubComments].[MainCommentId], [c.SubComments].[UserId]
+FROM [SubComment] AS [c.SubComments]
+INNER JOIN (
+    SELECT [c0].[ID]
+    FROM [MainComment] AS [c0]
+) AS [t] ON [c.SubComments].[MainCommentId] = [t].[ID]
+ORDER BY [t].[ID]" (0723d8ff)
+2021-05-01T21:02:35.5459401+02:00 0HM8CQD09U8M1:00000009 [INF] Executed action method "eshop.Areas.Admin.Controllers.CommentsController.CommentsShow (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 144.0306ms. (50a9e262)
+2021-05-01T21:02:35.5613840+02:00 0HM8CQD09U8M1:00000009 [INF] Executing ViewResult, running view "CommentsShow". (c83d0e25)
+2021-05-01T21:02:36.0867666+02:00 0HM8CQD09U8M1:00000009 [INF] Executed ViewResult - view "CommentsShow" executed in 540.2927ms. (f66409e9)
+2021-05-01T21:02:36.0872324+02:00 0HM8CQD09U8M1:00000009 [INF] Executed action "eshop.Areas.Admin.Controllers.CommentsController.CommentsShow (eshop)" in 687.4052ms (afa2e885)
+2021-05-01T21:02:36.0877066+02:00 0HM8CQD09U8M1:00000009 [INF] Request finished in 701.0302ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:50.2028262+02:00 0HM8CQD09U8M1:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/Orders   (ca22a1cb)
+2021-05-01T21:02:50.2122982+02:00 0HM8CQD09U8M1:0000000A [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Orders\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Areas.Admin.Controllers.OrdersController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:50.2128823+02:00 0HM8CQD09U8M1:0000000A [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:02:50.2140530+02:00 0HM8CQD09U8M1:0000000A [INF] Executing action method "eshop.Areas.Admin.Controllers.OrdersController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:50.2178188+02:00 0HM8CQD09U8M1:0000000A [INF] Order index (fd40f323)
+2021-05-01T21:02:50.2195567+02:00 0HM8CQD09U8M1:0000000A [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:02:50.4457730+02:00 0HM8CQD09U8M1:0000000A [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [o].[ID], [o].[DateTimeCreated], [o].[OrderNumber], [o].[TotalPrice], [o].[UserId], [o.User].[Id], [o.User].[AccessFailedCount], [o.User].[ConcurrencyStamp], [o.User].[Email], [o.User].[EmailConfirmed], [o.User].[LastName], [o.User].[LockoutEnabled], [o.User].[LockoutEnd], [o.User].[Name], [o.User].[NormalizedEmail], [o.User].[NormalizedUserName], [o.User].[PasswordHash], [o.User].[PhoneNumber], [o.User].[PhoneNumberConfirmed], [o.User].[SecurityStamp], [o.User].[TwoFactorEnabled], [o.User].[UserName]
+FROM [Order] AS [o]
+INNER JOIN [Users] AS [o.User] ON [o].[UserId] = [o.User].[Id]" (0723d8ff)
+2021-05-01T21:02:50.4838262+02:00 0HM8CQD09U8M1:0000000A [INF] Executed action method "eshop.Areas.Admin.Controllers.OrdersController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 269.1606ms. (50a9e262)
+2021-05-01T21:02:50.4978691+02:00 0HM8CQD09U8M1:0000000A [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:02:50.6321736+02:00 0HM8CQD09U8M1:0000000A [INF] Executed ViewResult - view "Index" executed in 147.0434ms. (f66409e9)
+2021-05-01T21:02:50.6326239+02:00 0HM8CQD09U8M1:0000000A [INF] Executed action "eshop.Areas.Admin.Controllers.OrdersController.Index (eshop)" in 419.9257ms (afa2e885)
+2021-05-01T21:02:50.6333651+02:00 0HM8CQD09U8M1:0000000A [INF] Request finished in 430.8465ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:52.9460106+02:00 0HM8CQD09U8M1:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/OrderItems   (ca22a1cb)
+2021-05-01T21:02:52.9530145+02:00 0HM8CQD09U8M1:0000000B [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"OrderItems\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Areas.Admin.Controllers.OrderItemsController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:52.9536813+02:00 0HM8CQD09U8M1:0000000B [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:02:52.9567783+02:00 0HM8CQD09U8M1:0000000B [INF] Executing action method "eshop.Areas.Admin.Controllers.OrderItemsController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:52.9772489+02:00 0HM8CQD09U8M1:0000000B [INF] OrderItem index (87eb1966)
+2021-05-01T21:02:52.9812032+02:00 0HM8CQD09U8M1:0000000B [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:02:53.1191752+02:00 0HM8CQD09U8M1:0000000B [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [o].[ID], [o].[Amount], [o].[DateTimeCreated], [o].[OrderID], [o].[Price], [o].[ProductID], [o.Product].[ID], [o.Product].[Category], [o.Product].[DateTimeCreated], [o.Product].[DetailOfProduct], [o.Product].[ImageAlt], [o.Product].[ImageSrc], [o.Product].[Name], [o.Product].[Price], [o.Order].[ID], [o.Order].[DateTimeCreated], [o.Order].[OrderNumber], [o.Order].[TotalPrice], [o.Order].[UserId]
+FROM [OrderItem] AS [o]
+INNER JOIN [Product] AS [o.Product] ON [o].[ProductID] = [o.Product].[ID]
+INNER JOIN [Order] AS [o.Order] ON [o].[OrderID] = [o.Order].[ID]" (0723d8ff)
+2021-05-01T21:02:53.2317180+02:00 0HM8CQD09U8M1:0000000B [INF] Executed action method "eshop.Areas.Admin.Controllers.OrderItemsController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 258.0194ms. (50a9e262)
+2021-05-01T21:02:53.2383504+02:00 0HM8CQD09U8M1:0000000B [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:02:53.4061449+02:00 0HM8CQD09U8M1:0000000B [INF] Executed ViewResult - view "Index" executed in 173.5651ms. (f66409e9)
+2021-05-01T21:02:53.4066550+02:00 0HM8CQD09U8M1:0000000B [INF] Executed action "eshop.Areas.Admin.Controllers.OrderItemsController.Index (eshop)" in 453.0981ms (afa2e885)
+2021-05-01T21:02:53.4071332+02:00 0HM8CQD09U8M1:0000000B [INF] Request finished in 461.2862ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:02:57.9631742+02:00 0HM8CQD09U8M1:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/Orders   (ca22a1cb)
+2021-05-01T21:02:57.9647643+02:00 0HM8CQD09U8M1:0000000C [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Orders\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Areas.Admin.Controllers.OrdersController" ("eshop"). (122b2fdf)
+2021-05-01T21:02:57.9651595+02:00 0HM8CQD09U8M1:0000000C [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:02:57.9656653+02:00 0HM8CQD09U8M1:0000000C [INF] Executing action method "eshop.Areas.Admin.Controllers.OrdersController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:02:57.9658814+02:00 0HM8CQD09U8M1:0000000C [INF] Order index (fd40f323)
+2021-05-01T21:02:57.9665650+02:00 0HM8CQD09U8M1:0000000C [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:02:58.0720657+02:00 0HM8CQD09U8M1:0000000C [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [o].[ID], [o].[DateTimeCreated], [o].[OrderNumber], [o].[TotalPrice], [o].[UserId], [o.User].[Id], [o.User].[AccessFailedCount], [o.User].[ConcurrencyStamp], [o.User].[Email], [o.User].[EmailConfirmed], [o.User].[LastName], [o.User].[LockoutEnabled], [o.User].[LockoutEnd], [o.User].[Name], [o.User].[NormalizedEmail], [o.User].[NormalizedUserName], [o.User].[PasswordHash], [o.User].[PhoneNumber], [o.User].[PhoneNumberConfirmed], [o.User].[SecurityStamp], [o.User].[TwoFactorEnabled], [o.User].[UserName]
+FROM [Order] AS [o]
+INNER JOIN [Users] AS [o.User] ON [o].[UserId] = [o.User].[Id]" (0723d8ff)
+2021-05-01T21:02:58.0733197+02:00 0HM8CQD09U8M1:0000000C [INF] Executed action method "eshop.Areas.Admin.Controllers.OrdersController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 107.2353ms. (50a9e262)
+2021-05-01T21:02:58.0739056+02:00 0HM8CQD09U8M1:0000000C [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:02:58.0885321+02:00 0HM8CQD09U8M1:0000000C [INF] Executed ViewResult - view "Index" executed in 14.1028ms. (f66409e9)
+2021-05-01T21:02:58.0890762+02:00 0HM8CQD09U8M1:0000000C [INF] Executed action "eshop.Areas.Admin.Controllers.OrdersController.Index (eshop)" in 123.8531ms (afa2e885)
+2021-05-01T21:02:58.0896496+02:00 0HM8CQD09U8M1:0000000C [INF] Request finished in 126.5794ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:03:00.4637887+02:00 0HM8CQD09U8M1:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44306/Admin/OrderItems   (ca22a1cb)
+2021-05-01T21:03:00.4659008+02:00 0HM8CQD09U8M1:0000000D [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"OrderItems\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Areas.Admin.Controllers.OrderItemsController" ("eshop"). (122b2fdf)
+2021-05-01T21:03:00.4662916+02:00 0HM8CQD09U8M1:0000000D [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:03:00.4667277+02:00 0HM8CQD09U8M1:0000000D [INF] Executing action method "eshop.Areas.Admin.Controllers.OrderItemsController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:03:00.4671505+02:00 0HM8CQD09U8M1:0000000D [INF] OrderItem index (87eb1966)
+2021-05-01T21:03:00.4695727+02:00 0HM8CQD09U8M1:0000000D [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:03:00.4828151+02:00 0HM8CQD09U8M1:0000000D [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [o].[ID], [o].[Amount], [o].[DateTimeCreated], [o].[OrderID], [o].[Price], [o].[ProductID], [o.Product].[ID], [o.Product].[Category], [o.Product].[DateTimeCreated], [o.Product].[DetailOfProduct], [o.Product].[ImageAlt], [o.Product].[ImageSrc], [o.Product].[Name], [o.Product].[Price], [o.Order].[ID], [o.Order].[DateTimeCreated], [o.Order].[OrderNumber], [o.Order].[TotalPrice], [o.Order].[UserId]
+FROM [OrderItem] AS [o]
+INNER JOIN [Product] AS [o.Product] ON [o].[ProductID] = [o.Product].[ID]
+INNER JOIN [Order] AS [o.Order] ON [o].[OrderID] = [o.Order].[ID]" (0723d8ff)
+2021-05-01T21:03:00.4917806+02:00 0HM8CQD09U8M1:0000000D [INF] Executed action method "eshop.Areas.Admin.Controllers.OrderItemsController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 21.9933ms. (50a9e262)
+2021-05-01T21:03:00.4955401+02:00 0HM8CQD09U8M1:0000000D [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:03:00.5722595+02:00 0HM8CQD09U8M1:0000000D [INF] Executed ViewResult - view "Index" executed in 79.0228ms. (f66409e9)
+2021-05-01T21:03:00.5727137+02:00 0HM8CQD09U8M1:0000000D [INF] Executed action "eshop.Areas.Admin.Controllers.OrderItemsController.Index (eshop)" in 106.3785ms (afa2e885)
+2021-05-01T21:03:00.5735001+02:00 0HM8CQD09U8M1:0000000D [INF] Request finished in 110.0534ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:03:12.0748735+02:00 0HM8CQD09U8M1:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44306/   (ca22a1cb)
+2021-05-01T21:03:12.0762396+02:00 0HM8CQD09U8M1:0000000E [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T21:03:12.0766322+02:00 0HM8CQD09U8M1:0000000E [INF] Executing action method "eshop.Controllers.HomeController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:03:12.0768842+02:00 0HM8CQD09U8M1:0000000E [INF] Home clicked (b2c0bc31)
+2021-05-01T21:03:12.0775300+02:00 0HM8CQD09U8M1:0000000E [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:03:12.0839814+02:00 0HM8CQD09U8M1:0000000E [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[CarouselContent], [c].[DataTarget], [c].[DateTimeCreated], [c].[ImageAlt], [c].[ImageSrc]
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T21:03:12.0877344+02:00 0HM8CQD09U8M1:0000000E [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T21:03:12.0894188+02:00 0HM8CQD09U8M1:0000000E [INF] Executed action method "eshop.Controllers.HomeController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 12.4073ms. (50a9e262)
+2021-05-01T21:03:12.0900738+02:00 0HM8CQD09U8M1:0000000E [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:03:12.1010826+02:00 0HM8CQD09U8M1:0000000E [INF] Executed ViewResult - view "Index" executed in 11.1425ms. (f66409e9)
+2021-05-01T21:03:12.1014321+02:00 0HM8CQD09U8M1:0000000E [INF] Executed action "eshop.Controllers.HomeController.Index (eshop)" in 24.8967ms (afa2e885)
+2021-05-01T21:03:12.1021494+02:00 0HM8CQD09U8M1:0000000E [INF] Request finished in 27.3457ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:04:02.0311725+02:00 0HM8CQD09U8M1:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44306/Products/13   (ca22a1cb)
+2021-05-01T21:04:02.0327651+02:00 0HM8CQD09U8M1:0000000F [INF] Route matched with "{action = \"Detail\", controller = \"Products\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Detail(Int32)" on controller "eshop.Controllers.ProductsController" ("eshop"). (122b2fdf)
+2021-05-01T21:04:02.0336146+02:00 0HM8CQD09U8M1:0000000F [INF] Executing action method "eshop.Controllers.ProductsController.Detail (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:04:02.0339070+02:00 0HM8CQD09U8M1:0000000F [INF] Detail clicked (787bf5f0)
+2021-05-01T21:04:02.0351701+02:00 0HM8CQD09U8M1:0000000F [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:04:02.0405024+02:00 0HM8CQD09U8M1:0000000F [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [prodI].[ID], [prodI].[Category], [prodI].[DateTimeCreated], [prodI].[DetailOfProduct], [prodI].[ImageAlt], [prodI].[ImageSrc], [prodI].[Name], [prodI].[Price]
+FROM [Product] AS [prodI]
+WHERE [prodI].[ID] = @__id_0
+ORDER BY [prodI].[ID]" (0723d8ff)
+2021-05-01T21:04:02.0472024+02:00 0HM8CQD09U8M1:0000000F [INF] Executed DbCommand ("6"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [prodI.MainComments].[ID], [prodI.MainComments].[Approved], [prodI.MainComments].[CommentMessage], [prodI.MainComments].[DateTimeCreated], [prodI.MainComments].[ProductId], [prodI.MainComments].[UserId], [m.User].[Id], [m.User].[AccessFailedCount], [m.User].[ConcurrencyStamp], [m.User].[Email], [m.User].[EmailConfirmed], [m.User].[LastName], [m.User].[LockoutEnabled], [m.User].[LockoutEnd], [m.User].[Name], [m.User].[NormalizedEmail], [m.User].[NormalizedUserName], [m.User].[PasswordHash], [m.User].[PhoneNumber], [m.User].[PhoneNumberConfirmed], [m.User].[SecurityStamp], [m.User].[TwoFactorEnabled], [m.User].[UserName]
+FROM [MainComment] AS [prodI.MainComments]
+INNER JOIN [Users] AS [m.User] ON [prodI.MainComments].[UserId] = [m.User].[Id]
+INNER JOIN (
+    SELECT TOP(1) [prodI0].[ID]
+    FROM [Product] AS [prodI0]
+    WHERE [prodI0].[ID] = @__id_0
+    ORDER BY [prodI0].[ID]
+) AS [t] ON [prodI.MainComments].[ProductId] = [t].[ID]
+ORDER BY [t].[ID], [prodI.MainComments].[ID]" (0723d8ff)
+2021-05-01T21:04:02.0579010+02:00 0HM8CQD09U8M1:0000000F [INF] Executed DbCommand ("9"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [prodI.MainComments.SubComments].[ID], [prodI.MainComments.SubComments].[Approved], [prodI.MainComments.SubComments].[CommentMessage], [prodI.MainComments.SubComments].[DateTimeCreated], [prodI.MainComments.SubComments].[MainCommentId], [prodI.MainComments.SubComments].[UserId]
+FROM [SubComment] AS [prodI.MainComments.SubComments]
+INNER JOIN (
+    SELECT DISTINCT [prodI.MainComments0].[ID], [t0].[ID] AS [ID0]
+    FROM [MainComment] AS [prodI.MainComments0]
+    INNER JOIN [Users] AS [m.User0] ON [prodI.MainComments0].[UserId] = [m.User0].[Id]
+    INNER JOIN (
+        SELECT TOP(1) [prodI1].[ID]
+        FROM [Product] AS [prodI1]
+        WHERE [prodI1].[ID] = @__id_0
+        ORDER BY [prodI1].[ID]
+    ) AS [t0] ON [prodI.MainComments0].[ProductId] = [t0].[ID]
+) AS [t1] ON [prodI.MainComments.SubComments].[MainCommentId] = [t1].[ID]
+ORDER BY [t1].[ID0], [t1].[ID]" (0723d8ff)
+2021-05-01T21:04:02.0616344+02:00 0HM8CQD09U8M1:0000000F [INF] Executed action method "eshop.Controllers.ProductsController.Detail (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 25.5896ms. (50a9e262)
+2021-05-01T21:04:02.0621820+02:00 0HM8CQD09U8M1:0000000F [INF] Executing ViewResult, running view "Detail". (c83d0e25)
+2021-05-01T21:04:02.0660005+02:00 0HM8CQD09U8M1:0000000F [INF] Executed ViewResult - view "Detail" executed in 3.8635ms. (f66409e9)
+2021-05-01T21:04:02.0663024+02:00 0HM8CQD09U8M1:0000000F [INF] Executed action "eshop.Controllers.ProductsController.Detail (eshop)" in 33.2081ms (afa2e885)
+2021-05-01T21:04:02.0668474+02:00 0HM8CQD09U8M1:0000000F [INF] Request finished in 48.5803ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:04:06.8101966+02:00 0HM8CQD09U8M1:00000010 [INF] Request starting HTTP/1.1 POST http://localhost:44306/Customer/CustomerOrderNotCart/AddOrderItemsToSession application/x-www-form-urlencoded; charset=UTF-8 12 (ca22a1cb)
+2021-05-01T21:04:06.8137259+02:00 0HM8CQD09U8M1:00000010 [INF] Route matched with "{area = \"Customer\", action = \"AddOrderItemsToSession\", controller = \"CustomerOrderNotCart\"}". Executing controller action with signature "Double AddOrderItemsToSession(System.Nullable`1[System.Int32])" on controller "eshop.Areas.Customer.Controllers.CustomerOrderNotCartController" ("eshop"). (122b2fdf)
+2021-05-01T21:04:06.8141359+02:00 0HM8CQD09U8M1:00000010 [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:04:06.8191711+02:00 0HM8CQD09U8M1:00000010 [INF] Executing action method "eshop.Areas.Customer.Controllers.CustomerOrderNotCartController.AddOrderItemsToSession (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:04:06.8229978+02:00 0HM8CQD09U8M1:00000010 [INF] CustomerOrderNotCart AddOrderItemsToSession (4a9008d1)
+2021-05-01T21:04:06.8263476+02:00 0HM8CQD09U8M1:00000010 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:04:06.8414032+02:00 0HM8CQD09U8M1:00000010 [INF] Executed DbCommand ("2"ms) [Parameters=["@__productId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [prod].[ID], [prod].[Category], [prod].[DateTimeCreated], [prod].[DetailOfProduct], [prod].[ImageAlt], [prod].[ImageSrc], [prod].[Name], [prod].[Price]
+FROM [Product] AS [prod]
+WHERE [prod].[ID] = @__productId_0" (0723d8ff)
+2021-05-01T21:04:07.0960896+02:00 0HM8CQD09U8M1:00000010 [INF] Executed action method "eshop.Areas.Customer.Controllers.CustomerOrderNotCartController.AddOrderItemsToSession (eshop)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 276.39ms. (50a9e262)
+2021-05-01T21:04:07.1191563+02:00 0HM8CQD09U8M1:00000010 [INF] Executing ObjectResult, writing value of type '"System.Double"'. (8a1b66c8)
+2021-05-01T21:04:07.1285518+02:00 0HM8CQD09U8M1:00000010 [INF] Executed action "eshop.Areas.Customer.Controllers.CustomerOrderNotCartController.AddOrderItemsToSession (eshop)" in 314.3109ms (afa2e885)
+2021-05-01T21:04:07.1327343+02:00 0HM8CQD09U8M1:00000010 [INF] Session started; Key:"1b7cd116-4e43-fcad-b67c-c87fa4b6f84a", Id:"5c287e0f-6913-f029-ef54-86bfa718f312" (1d7cf8c0)
+2021-05-01T21:04:07.1359713+02:00 0HM8CQD09U8M1:00000010 [INF] Request finished in 325.8435ms 200 application/json; charset=utf-8 (791a596a)
+2021-05-01T21:04:08.4386560+02:00 0HM8CQD09U8M1:00000011 [INF] Request starting HTTP/1.1 POST http://localhost:44306/Customer/CustomerOrderNotCart/AddOrderItemsToSession application/x-www-form-urlencoded; charset=UTF-8 12 (ca22a1cb)
+2021-05-01T21:04:08.4400140+02:00 0HM8CQD09U8M1:00000011 [INF] Route matched with "{area = \"Customer\", action = \"AddOrderItemsToSession\", controller = \"CustomerOrderNotCart\"}". Executing controller action with signature "Double AddOrderItemsToSession(System.Nullable`1[System.Int32])" on controller "eshop.Areas.Customer.Controllers.CustomerOrderNotCartController" ("eshop"). (122b2fdf)
+2021-05-01T21:04:08.4403153+02:00 0HM8CQD09U8M1:00000011 [INF] Authorization was successful. (0d575a54)
+2021-05-01T21:04:08.4411810+02:00 0HM8CQD09U8M1:00000011 [INF] Executing action method "eshop.Areas.Customer.Controllers.CustomerOrderNotCartController.AddOrderItemsToSession (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:04:08.4414161+02:00 0HM8CQD09U8M1:00000011 [INF] CustomerOrderNotCart AddOrderItemsToSession (4a9008d1)
+2021-05-01T21:04:08.4422724+02:00 0HM8CQD09U8M1:00000011 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:04:08.4451917+02:00 0HM8CQD09U8M1:00000011 [INF] Executed DbCommand ("2"ms) [Parameters=["@__productId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [prod].[ID], [prod].[Category], [prod].[DateTimeCreated], [prod].[DetailOfProduct], [prod].[ImageAlt], [prod].[ImageSrc], [prod].[Name], [prod].[Price]
+FROM [Product] AS [prod]
+WHERE [prod].[ID] = @__productId_0" (0723d8ff)
+2021-05-01T21:04:08.5083254+02:00 0HM8CQD09U8M1:00000011 [INF] Executed action method "eshop.Areas.Customer.Controllers.CustomerOrderNotCartController.AddOrderItemsToSession (eshop)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 66.6861ms. (50a9e262)
+2021-05-01T21:04:08.5093622+02:00 0HM8CQD09U8M1:00000011 [INF] Executing ObjectResult, writing value of type '"System.Double"'. (8a1b66c8)
+2021-05-01T21:04:08.5099620+02:00 0HM8CQD09U8M1:00000011 [INF] Executed action "eshop.Areas.Customer.Controllers.CustomerOrderNotCartController.AddOrderItemsToSession (eshop)" in 69.6075ms (afa2e885)
+2021-05-01T21:04:08.5110071+02:00 0HM8CQD09U8M1:00000011 [INF] Request finished in 72.3637ms 200 application/json; charset=utf-8 (791a596a)
+2021-05-01T21:04:11.7178512+02:00 0HM8CQD09U8M1:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:44306/   (ca22a1cb)
+2021-05-01T21:04:11.7216509+02:00 0HM8CQD09U8M1:00000012 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "eshop.Controllers.HomeController" ("eshop"). (122b2fdf)
+2021-05-01T21:04:11.7220943+02:00 0HM8CQD09U8M1:00000012 [INF] Executing action method "eshop.Controllers.HomeController.Index (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:04:11.7223695+02:00 0HM8CQD09U8M1:00000012 [INF] Home clicked (b2c0bc31)
+2021-05-01T21:04:11.7232606+02:00 0HM8CQD09U8M1:00000012 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EshopDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-05-01T21:04:11.7282297+02:00 0HM8CQD09U8M1:00000012 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ID], [c].[CarouselContent], [c].[DataTarget], [c].[DateTimeCreated], [c].[ImageAlt], [c].[ImageSrc]
+FROM [Carousel] AS [c]" (0723d8ff)
+2021-05-01T21:04:11.7318902+02:00 0HM8CQD09U8M1:00000012 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ID], [p].[Category], [p].[DateTimeCreated], [p].[DetailOfProduct], [p].[ImageAlt], [p].[ImageSrc], [p].[Name], [p].[Price]
+FROM [Product] AS [p]" (0723d8ff)
+2021-05-01T21:04:11.7338512+02:00 0HM8CQD09U8M1:00000012 [INF] Executed action method "eshop.Controllers.HomeController.Index (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 11.3082ms. (50a9e262)
+2021-05-01T21:04:11.7344071+02:00 0HM8CQD09U8M1:00000012 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2021-05-01T21:04:11.7435530+02:00 0HM8CQD09U8M1:00000012 [INF] Executed ViewResult - view "Index" executed in 6.1495ms. (f66409e9)
+2021-05-01T21:04:11.7440216+02:00 0HM8CQD09U8M1:00000012 [INF] Executed action "eshop.Controllers.HomeController.Index (eshop)" in 21.9852ms (afa2e885)
+2021-05-01T21:04:11.7517264+02:00 0HM8CQD09U8M1:00000012 [INF] Request finished in 34.2527ms 200 text/html; charset=utf-8 (791a596a)
+2021-05-01T21:04:20.5366277+02:00 0HM8CQD09U8M1:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Security/Account/Logout   (ca22a1cb)
+2021-05-01T21:04:20.5396028+02:00 0HM8CQD09U8M1:00000013 [INF] Route matched with "{area = \"Security\", action = \"Logout\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Logout()" on controller "eshop.Areas.Security.Controllers.AccountController" ("eshop"). (122b2fdf)
+2021-05-01T21:04:20.5400195+02:00 0HM8CQD09U8M1:00000013 [INF] Executing action method "eshop.Areas.Security.Controllers.AccountController.Logout (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:04:20.5408860+02:00 0HM8CQD09U8M1:00000013 [INF] Account logout (848370dd)
+2021-05-01T21:04:20.5550398+02:00 0HM8CQD09U8M1:00000013 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2021-05-01T21:04:20.5582977+02:00 0HM8CQD09U8M1:00000013 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2021-05-01T21:04:20.5685872+02:00 0HM8CQD09U8M1:00000013 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2021-05-01T21:04:20.5720236+02:00 0HM8CQD09U8M1:00000013 [INF] Executed action method "eshop.Areas.Security.Controllers.AccountController.Logout (eshop)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 28.7023ms. (50a9e262)
+2021-05-01T21:04:20.5738808+02:00 0HM8CQD09U8M1:00000013 [INF] Executing RedirectResult, redirecting to "/Security/Account/Login". (d98d540e)
+2021-05-01T21:04:20.5750850+02:00 0HM8CQD09U8M1:00000013 [INF] Executed action "eshop.Areas.Security.Controllers.AccountController.Logout (eshop)" in 34.3211ms (afa2e885)
+2021-05-01T21:04:20.5765912+02:00 0HM8CQD09U8M1:00000013 [INF] Request finished in 39.0303ms 302  (791a596a)
+2021-05-01T21:04:20.7009071+02:00 0HM8CQD09U8M1:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:44306/Security/Account/Login   (ca22a1cb)
+2021-05-01T21:04:20.7020460+02:00 0HM8CQD09U8M1:00000014 [INF] Route matched with "{area = \"Security\", action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "eshop.Areas.Security.Controllers.AccountController" ("eshop"). (122b2fdf)
+2021-05-01T21:04:20.7028284+02:00 0HM8CQD09U8M1:00000014 [INF] Executing action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" - Validation state: Valid (dad538d7)
+2021-05-01T21:04:20.7030671+02:00 0HM8CQD09U8M1:00000014 [INF] Account login (2b786d64)
+2021-05-01T21:04:20.7034333+02:00 0HM8CQD09U8M1:00000014 [INF] Executed action method "eshop.Areas.Security.Controllers.AccountController.Login (eshop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2919ms. (50a9e262)
+2021-05-01T21:04:20.7047577+02:00 0HM8CQD09U8M1:00000014 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2021-05-01T21:04:20.7094000+02:00 0HM8CQD09U8M1:00000014 [INF] Executed ViewResult - view "Login" executed in 5.1353ms. (f66409e9)
+2021-05-01T21:04:20.7098339+02:00 0HM8CQD09U8M1:00000014 [INF] Executed action "eshop.Areas.Security.Controllers.AccountController.Login (eshop)" in 7.372ms (afa2e885)
+2021-05-01T21:04:20.7103691+02:00 0HM8CQD09U8M1:00000014 [INF] Request finished in 11.5153ms 200 text/html; charset=utf-8 (791a596a)

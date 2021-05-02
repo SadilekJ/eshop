@@ -1,0 +1,35 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+@*<h2>@ViewData["Title"]</h2>*@
+
+<link rel="stylesheet" href="~/css/LoginPageStyleSheet.css" />
+
+<body>
+    <div class="container">
+        <div id="wrapper">
+            <form asp-action="Login" method="post">
+                <fieldset>
+                    <legend>Login</legend>
+                    <div class="form-group-lg">
+                        <input class="form-control" asp-for="@Model.UserName" type="text" placeholder="User Name" />
+                        <span asp-validation-for="@Model.UserName" type="text" class="text-danger"></span>
+                    </div>
+                    <div class="form-group-lg">
+                        <input class="form-control" asp-for="@Model.Password" type="password" placeholder="Password" />
+                        <span asp-validation-for="@Model.Password" type="text" class="text-danger"></span>
+                    </div>
+                    <button class="btn" type="submit">Sign in</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+@section Scripts {
+    <script src="~/js/Scripts.js"></script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}​​​​

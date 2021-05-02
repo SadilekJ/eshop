@@ -1,0 +1,47 @@
+﻿@model CarouselViewModel
+@{
+    ViewData["Title"] = "Carousel";
+}
+
+<h2>@ViewData["Title"] </h2>
+
+<a asp-area="Admin" asp-controller="Carousel" asp-action="Create">Create Carousel</a>
+<br />
+<br />
+
+@{ if (Model != null && Model.Carousels != null && Model.Carousels.Count > 0)
+    {
+    <table style="width:100%">
+        <tr>
+            <th class="col-sm-1">@Html.DisplayNameFor(model => model.Carousels[0].ID)</th>
+            <th class="col-sm-1">@Html.DisplayNameFor(model => model.Carousels[0].DataTarget)</th>
+            <th class="col-sm-2">@Html.DisplayNameFor(model => model.Carousels[0].ImageSrc)</th>
+            <th class="col-sm-2">@Html.DisplayNameFor(model => model.Carousels[0].ImageAlt)</th>
+            <th class="col-sm-4">@Html.DisplayNameFor(model => model.Carousels[0].CarouselContent)</th>
+            <th class="col-sm-1"></th>
+            <th class="col-sm-1"></th>
+        </tr>
+        @foreach (var carousel in Model.Carousels)
+        {
+    <tr>
+        <td class="col-sm-1">@carousel.ID</td>
+        <td class="col-sm-1">@carousel.DataTarget</td>
+        <td class="col-sm-2">@carousel.ImageSrc</td>
+        <td class="col-sm-2">@carousel.ImageAlt</td>
+        <td class="col-sm-4">@carousel.CarouselContent</td>
+        <td class="col-sm-1"><a asp-area="Admin" asp-controller="Carousel" asp-action="Edit" asp-route-id="@carousel.ID">Edit</a></td>
+        <td class="col-sm-1"><a asp-area="Admin" asp-controller="Carousel" asp-action="Delete" asp-route-id="@carousel.ID" onclick="return ConfirmDelete();">Delete</a></td>
+    </tr>
+        }
+    </table>
+    }
+    else
+    {
+        <h2> Carousel items not found!</h2>
+    }
+}
+
+@section Scripts
+{
+    <script src="~/js/Scripts.js"></script>
+}

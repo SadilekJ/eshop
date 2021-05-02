@@ -1,0 +1,124 @@
+﻿@model CommentsViewModel
+
+@{
+    ViewData["Title"] = "Comments";
+}
+
+<h2>Approve comments</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].CommentMessage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].DateTimeCreated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].Approved)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.MainComments) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommentMessage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTimeCreated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Approved)
+            </td>
+            <td>
+                @if (@item.Approved == false)
+                {
+                    <a asp-area="Admin" asp-controller="Comments" asp-action="ApproveMainComment" asp-route-id="@item.ID">Approve MainComment</a>
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].SubComments[0].ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].SubComments[0].CommentMessage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].SubComments[0].UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].SubComments[0].MainCommentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].SubComments[0].DateTimeCreated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainComments[0].SubComments[0].Approved)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.MainComments)
+        {
+            @foreach (var sub in item.SubComments)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => sub.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => sub.CommentMessage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => sub.UserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => sub.MainCommentId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => sub.DateTimeCreated)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => sub.Approved)
+                </td>
+                <td>
+                    @if (@sub.Approved == false)
+                    {
+                        <a asp-area="Admin" asp-controller="Comments" asp-action="ApproveSubComment" asp-route-id="@sub.ID">Approve SubComment</a>
+                    }
+                </td>
+            </tr>
+                }
+            }
+    </tbody>
+</table>

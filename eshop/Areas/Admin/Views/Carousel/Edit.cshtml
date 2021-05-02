@@ -1,0 +1,17 @@
+﻿@model Carousel
+@{
+    ViewData["Title"] = "Edit Carousel";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+@{ViewBag.Action = "Edit";}
+
+<partial name="EditForm" model="Model">
+
+    @section Scripts
+    {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        <script src="~/js/Validation/FileContentTypeValidation.js"></script>
+    }

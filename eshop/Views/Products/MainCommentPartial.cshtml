@@ -1,0 +1,13 @@
+﻿@model CommentsViewModel
+
+    <link rel="stylesheet" href="~/css/Styles.css" />
+
+<div>
+    <form method="post" asp-controller="Products" asp-action="Comment">
+        <input asp-for="ProductId" type="hidden" />
+        <input asp-for="MainCommentId" type="hidden" />
+        @*<input asp-for="Message" type="text" />*@
+        <textarea style="min-width:100px; max-width:500px; min-height:50px; max-height:250px" asp-for="Message" type="text"> </textarea>
+        <button name="comment-button" type="submit">Přidat komentář</button>
+    </form>
+</div>

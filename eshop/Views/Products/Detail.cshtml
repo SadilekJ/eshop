@@ -1,0 +1,81 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Product detail";
+}
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+    <div class="row">
+        <div class="text-center" >
+            <div class="card mt-4">
+                <img class="card-img-top img-fluid" height="500" width="350" src="@Model.ImageSrc" alt="@Model.ImageAlt">
+                <div class="card-body">
+                    <h3 class="card-title">Název: @Model.Name</h3>
+                    <h4>Cena: @Model.Price Kč</h4>
+                    <p class="card-text">Popis: @Model.DetailOfProduct</p>
+                </div>
+                    <input type="button" class="btn-success" value="Buy" style="font-size:1.5em"
+                           onclick="Buy(@Model.ID,'@Url.Action("AddOrderItemsToSession", "CustomerOrderNotCart", new { Area = "Customer" })', '#total_price', '@System.Globalization.CultureInfo.CurrentCulture.Name')" />
+            </div>
+
+        </div>
+    </div>
+    <br />
+</div>
+
+<div class="comment-section">
+    <h3 style="background-color:powderblue;">Sekce komentářů</h3>
+    @if (User.Identity.IsAuthenticated == true && (User.IsInRole(Roles.Admin.ToString()) || User.IsInRole(Roles.Manager.ToString()) || User.IsInRole(Roles.Customer.ToString())))
+    {
+        await Html.RenderPartialAsync("MainCommentPartial", new CommentsViewModel { ProductId = Model.ID, MainCommentId = 0 });
+    }
+    @if (Model.MainComments != null)
+    {
+        @foreach (var c in Model.MainComments)
+        {
+            if (c.Approved)
+            {
+                <h4 style="background-color:orangered;">Hlavní komentář</h4>
+                <p><b>@c.User.UserName</b> <small>@c.DateTimeCreated</small></p>
+                <p style="font-size:16px">@c.CommentMessage</p>
+                <div style="margin-left: 30px">
+                    <h5 style="background-color:lawngreen;">Odpovědi na komentář</h5>
+                    @if (c.SubComments != null)
+                    {
+                        @foreach (var sc in c.SubComments)
+                        {
+                            if (sc.Approved)
+                            {
+                                <p><b>@sc.User.UserName</b> <small>@sc.DateTimeCreated</small></p>
+                                <p style="font-size:16px">
+                                    @sc.CommentMessage
+                                </p>
+                            }
+                        }
+                    }
+                    @if (User.Identity.IsAuthenticated == true && (User.IsInRole(Roles.Admin.ToString()) || User.IsInRole(Roles.Manager.ToString()) || User.IsInRole(Roles.Customer.ToString())))
+                    {
+                        await Html.RenderPartialAsync("MainCommentPartial", new CommentsViewModel { ProductId = Model.ID, MainCommentId = c.ID });
+                    }
+                </div>
+            }
+        }
+    }
+    <br />
+</div>
+<!-- /.container -->
+
+<div>
+    <br />
+    <a asp-area="" asp-controller="Home" asp-action="Index">Back to Main Page</a>
+</div>
+
+@section Scripts {
+    <environment include="Development">
+        <script src="~/js/Product.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/Product.min.js"></script>
+    </environment>
+}
